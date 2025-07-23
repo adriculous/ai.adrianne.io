@@ -1,0 +1,23 @@
+# Hugo build files
+public/
+resources/_gen/
+.hugo_build.lock
+
+# Node modules and build junk
+node_modules/
+.parcel-cache/
+dist/
+.next/
+.vercel/
+.netlify/
+
+# OS & editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
+
+# npm & lockfiles
+package-lock.json
+yarn.lock

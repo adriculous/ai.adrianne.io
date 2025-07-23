@@ -1,0 +1,45 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[menu]
+
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Prompt"
+    url = "/prompt/"
+    weight = 2
+
+  [[menu.main]]
+    name = "Design"
+    url = "/design/"
+    weight = 3
+
+  [[menu.main]]
+    name = "Playground"
+    url = "/playground/"
+    weight = 4
+
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 5
+
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 6
+
+  [[menu.main]]
+    name = "Colophon"
+    url = "/colophon/"
+    weight = 7

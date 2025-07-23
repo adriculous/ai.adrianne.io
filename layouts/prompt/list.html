@@ -1,0 +1,23 @@
+{{ define "main" }}
+  <div class="px-6 py-20 min-h-screen {{ .Params.boxColor | default "bg-white" }} rounded-2xl shadow-xl p-10 sm:p-12 lg:p-16 space-y-6">
+    <div class="max-w-3xl mx-auto space-y-4 font-mono text-lg">
+      <h1 class="text-3xl font-bold mb-4">{{ .Title }}</h1>
+      {{ if .Params.description }}
+        <p class="mb-6 text-ink/80">{{ .Params.description }}</p>
+      {{ end }}
+
+      <div class="space-y-4">
+        {{ range .Pages }}
+          <details class="group border border-ink/20 rounded-xl p-4 transition-all bg-white/70 shadow hover:shadow-lg">
+            <summary class="cursor-pointer font-semibold text-ink hover:text-pink-500 transition-all">
+              {{ .Params.emoji | default "🐾" }} {{ .Title }}
+            </summary>
+            <div class="mt-2 prose prose-pink max-w-none">
+              {{ .Content | markdownify }}
+            </div>
+          </details>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+{{ end }}
