@@ -1,0 +1,33 @@
+{{ define "main" }}
+  <div class="px-6 py-20 min-h-screen {{ .Params.boxColor | default "bg-white" }} rounded-2xl shadow-xl p-10 sm:p-12 lg:p-16 space-y-10">
+    <div class="max-w-4xl mx-auto space-y-6 font-mono text-lg">
+      <h1 class="text-4xl font-bold mb-2">{{ .Title }}</h1>
+      {{ if .Params.description }}
+        <p class="text-ink/80">{{ .Params.description }}</p>
+      {{ end }}
+
+      <div class="grid md:grid-cols-2 gap-6">
+        {{ range .Pages }}
+          <a href="{{ .RelPermalink }}" class="block rounded-xl shadow hover:shadow-lg transition-all bg-white/70 border border-ink/10 p-6 space-y-2">
+            {{ if .Params.image }}
+              <img src="{{ .Params.image }}" alt="" class="rounded-md w-full h-40 object-cover mb-3" />
+            {{ else }}
+              <div class="bg-yellow-200 text-black font-mono text-sm flex items-center justify-center rounded-md w-full h-40 text-center p-4">
+                <div>
+                  <p>LDN Mode:<br>No Beautiful Featured Image<br>for You.</p>
+                  <img src="/images/mascots/ldn-crying.png" alt="LDN Mascot" class="mx-auto mt-2 h-10" />
+                </div>
+              </div>
+            {{ end }}
+
+            <h2 class="text-xl font-semibold text-ink hover:text-pink-600">{{ .Title }}</h2>
+
+            {{ if .Params.description }}
+              <p class="text-sm text-ink/70">{{ .Params.description }}</p>
+            {{ end }}
+          </a>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+{{ end }}

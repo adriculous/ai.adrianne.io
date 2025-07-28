@@ -1,0 +1,24 @@
+# Hugo
+/public/
+/resources/_gen/
+
+# Node
+node_modules/
+package-lock.json
+
+# macOS system junk
+.DS_Store
+
+# VS Code settings (optional)
+.vscode/
+
+# Hugo cache
+hugo_stats.json
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# dotenv (if you use it)
+.env
