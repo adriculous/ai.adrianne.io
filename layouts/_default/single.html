@@ -1,14 +1,14 @@
 {{ define "main" }}
-  <div class="px-4 py-12 min-h-screen">
-    <div class="{{ .Params.boxColor | default "bg-white/70" }} prose prose-neutral max-w-3xl mx-auto p-8 rounded-2xl shadow-xl">
-      
-      {{ if .Params.image }}
-        <img src="{{ .Params.image }}" alt="" class="rounded-xl w-full object-cover mb-6" />
+  <div class="max-w-3xl mx-auto px-4 py-12">
+    <div class="rounded-2xl {{ .Params.boxColor | default "bg-pastel" }} p-8 shadow-md prose prose-slate prose-headings:font-normal">
+      {{ with .Params.emoji }}
+        <h1 class="mb-0 text-4xl leading-tight">{{ . }} {{ $.Title }}</h1>
       {{ else }}
-        {{ partial "ldn-fallback.html" . }}
+        <h1 class="mb-0 text-4xl leading-tight">{{ .Title }}</h1>
       {{ end }}
-
-      {{ .Content }}
+      <div class="mt-6">
+        {{ .Content }}
+      </div>
     </div>
   </div>
 {{ end }}
