@@ -3,6 +3,8 @@ title: "About Me"
 layout: "single"
 description: "Who I am and what I do"
 emoji: "🌸"
+date: 0000-01-01T00:00:00Z  # ← Dummy value to prevent weird behavior
+lastmod: 2025-07-29
 boxColor: "bg-[#fff1f5]" # pastel pink
 ---
 

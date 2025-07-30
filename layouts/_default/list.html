@@ -1,40 +1,6 @@
 {{ define "main" }}
 <section class="mx-auto max-w-3xl px-4 py-8">
-  <div class="{{ .Params.boxColor | default "bg-[#ebfff5]" }} rounded-2xl shadow-md p-6">
-    <h1 class="text-4xl font-bold mb-4">
-      {{ with .Params.emoji }}{{ . }} {{ end }}{{ .Title }}
-    </h1>
-    {{ with .Params.description }}
-      <p class="text-xl text-ink/70 mb-8">{{ . }}</p>
-    {{ end }}
-
-    <div class="grid md:grid-cols-2 gap-6">
-      {{ range .Pages }}
-      <div class="bg-white p-4 border border-gray-200 rounded-lg shadow-sm">
-        <img 
-          src="{{ with .Params.featuredImage }}{{ . }}{{ else }}/images/ldn-mode-no-images.png{{ end }}" 
-          alt="Cover image for {{ .Title }}" 
-          class="rounded-lg mb-3"
-        />
-
-        <h2 class="text-2xl font-semibold mb-1">{{ .Title }}</h2>
-
-        {{ if .Params.date }}
-        <p class="text-sm text-ink/50 mb-2">
-          🗓 {{ .Date.Format "2006-01-02" }}
-        </p>
-        {{ end }}
-
-        {{ if .Params.description }}
-        <p class="text-ink/80 mb-3">{{ .Params.description }}</p>
-        {{ end }}
-
-        <a href="{{ .RelPermalink }}" class="text-pink-600 hover:underline text-sm font-semibold">
-          Read More →
-        </a>
-      </div>
-      {{ end }}
-    </div>
-  </div>
+  {{ partial "list/header.html" . }}
+  {{ partial "list/grid.html" . }}
 </section>
 {{ end }}

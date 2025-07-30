@@ -3,6 +3,8 @@ title: "Contact"
 layout: "single"
 description: "Let’s connect!"
 emoji: "📮"
+date: 0000-01-01T00:00:00Z  # ← Dummy value to prevent weird behavior
+lastmod: 2025-07-29
 boxColor: "bg-[#f8f3ff]" # pastel lavender
 ---
 

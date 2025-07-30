@@ -3,6 +3,8 @@ title: "Colophon"
 layout: "single"
 emoji: "⚙️"
 description: "About this site's tech stack, design choices, and creative tools."
+date: 0000-01-01T00:00:00Z  # ← Dummy value to prevent weird behavior
+lastmod: 2025-07-29
 boxColor: "bg-[#fffbe7]" # lemon souffle
 ---
 

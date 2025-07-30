@@ -1,13 +1,25 @@
 {{ define "main" }}
   <div class="max-w-3xl mx-auto px-4 py-12">
     <div class="rounded-2xl {{ .Params.boxColor | default "bg-pastel" }} p-8 shadow-md prose prose-slate prose-headings:font-normal">
+
       {{ with .Params.emoji }}
         <h1 class="mb-0 text-4xl leading-tight">{{ . }} {{ $.Title }}</h1>
       {{ else }}
         <h1 class="mb-0 text-4xl leading-tight">{{ .Title }}</h1>
       {{ end }}
+
+      {{ if and (.Lastmod) (ne (.Date.Format "2006-01-02") "0000-01-01") }}
+        <p class="text-sm text-ink/50 mt-2 mb-4">🛠️ Updated: {{ .Lastmod.Format "2006-01-02" }}</p>
+      {{ end }}
+
       <div class="mt-6">
         {{ .Content }}
+      </div>
+
+      <div class="mt-12 text-right">
+        <a href="/" class="inline-block bg-[#ede9fe] text-[#6b21a8] border border-[#c4b5fd] text-sm font-semibold px-4 py-2 rounded-full hover:bg-[#ddd6fe] transition no-underline">
+          🏡 Home
+        </a>
       </div>
     </div>
   </div>

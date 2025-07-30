@@ -1,0 +1,17 @@
+<div class="text-sm text-gray-500 mb-4 flex flex-wrap gap-4 items-center">
+  <span>📅 {{ .Date.Format "2006-01-02" }}</span>
+  {{ if ne .Date.Unix .Lastmod.Unix }}
+    <span>🛠️ Updated: {{ .Lastmod.Format "2006-01-02" }}</span>
+  {{ end }}
+  {{ if .Params.categories }}
+    <span>🏷️ {{ delimit .Params.categories ", " }}</span>
+  {{ end }}
+  {{ if .Params.tags }}
+    <span>🔖 
+      {{ range $i, $tag := .Params.tags }}
+        {{ if $i }}, {{ end }}<a href="/tags/{{ $tag | urlize }}/" class="underline hover:text-pink-500">{{ $tag }}</a>
+      {{ end }}
+    </span>
+  {{ end }}
+  <span>⏱️ {{ .ReadingTime }} min read</span>
+</div>

@@ -1,32 +1,61 @@
 {{ define "main" }}
-  <section class="mx-auto max-w-3xl px-4 py-8">
-    <div class="{{ .Params.boxColor | default `bg-[#fdfdfd]` }} rounded-2xl shadow-md p-6">
-      <h1 class="text-4xl font-bold mb-6">
-        {{ with .Params.emoji }}{{ . }} {{ end }}{{ .Title }}
-      </h1>
-      {{ with .Params.description }}
-        <p class="text-lg text-ink/80 mb-8">{{ . }}</p>
-      {{ end }}
+<section class="mx-auto max-w-3xl px-4 py-8">
+  <div class="bg-[#f5eaff] rounded-2xl shadow-md p-6">
+    <h1 class="text-4xl font-bold mb-2 flex items-center">
+      <span class="mr-2">💖🖋️</span> {{ .Title }}
+    </h1>
+    {{ with .Params.description }}
+      <p class="text-xl text-ink/70 mb-6">{{ . }}</p>
+    {{ end }}
 
-      {{ $pages := .Pages }}
-      {{ if .IsHome }}
-        {{ $pages = .Site.RegularPages }}
-      {{ end }}
+    {{ range .Pages }}
+    <details class="mb-4">
+      <summary class="cursor-pointer bg-white rounded-lg shadow flex justify-between items-center px-4 py-3 font-semibold hover:bg-gray-50">
+        <span>🖋 {{ .Title }}</span>
+        <span class="text-2xl text-ink/40">▸</span>
+      </summary>
 
-      {{ range $pages }}
-        <details class="group border-t border-ink/20 py-4 transition-all duration-300 ease-in-out">
-          <summary class="flex cursor-pointer list-none items-center justify-between font-semibold text-xl">
-            <span>{{ .Title }}</span>
-            <span class="transition-transform duration-300 group-open:rotate-90">▶</span>
-          </summary>
-          <div class="mt-2 text-ink/90 prose prose-neutral max-w-none">
-            {{ .Summary }}
-            <p class="mt-2">
-              <a href="{{ .RelPermalink }}" class="text-blue-500 hover:underline">Read more →</a>
-            </p>
-          </div>
-        </details>
-      {{ end }}
-    </div>
-  </section>
+      <div class="bg-white border rounded-lg shadow-inner mt-2 p-4">
+        <!-- Featured Image -->
+        <img 
+          src="{{ with .Params.featuredImage }}{{ . }}{{ else }}/images/ldn-mode-no-images.png{{ end }}" 
+          alt="Preview of {{ .Title }}" 
+          class="rounded-lg mb-4 shadow"
+        />
+
+        <!-- Date & Meta -->
+        <div class="text-sm text-gray-500 mb-2 flex flex-wrap gap-4 items-center">
+          <span>📅 {{ .Date.Format "2006-01-02" }}</span>
+          {{ if ne .Date.Unix .Lastmod.Unix }}
+            <span>🛠️ Updated: {{ .Lastmod.Format "2006-01-02" }}</span>
+          {{ end }}
+        </div>
+
+        <!-- Tags -->
+        {{ if .Params.tags }}
+        <div class="text-sm text-gray-500 mb-2">
+          <span>📌 
+            {{ range $i, $tag := .Params.tags }}
+              {{ if $i }}, {{ end }}{{ $tag }}
+            {{ end }}
+          </span>
+        </div>
+        {{ end }}
+
+        <!-- Summary -->
+        {{ if .Params.summary }}
+          <p class="mb-4">{{ .Params.summary }}</p>
+        {{ end }}
+
+        <!-- Read More Button -->
+        <div class="flex justify-end">
+          <a href="{{ .RelPermalink }}" class="inline-block bg-pink-200 text-pink-800 px-4 py-1 rounded-full text-sm font-semibold shadow hover:bg-pink-300 transition">
+            🍡 Read More
+          </a>
+        </div>
+      </div>
+    </details>
+    {{ end }}
+  </div>
+</section>
 {{ end }}

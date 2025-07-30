@@ -1,6 +1,18 @@
-baseURL = 'https://ai.adrianne.io/'
-languageCode = 'en-us'
-title = 'Prompted by Adrianne'
+baseURL = "https://ai.adrianne.io/"
+languageCode = "en-us"
+title = "Prompted by Adrianne"
+pagination.pagerSize = 10
+
+# Pastel mode if needed
+enableEmoji = true
+enableRobotsTXT = true
+
+[params]
+dateFormat = "01.02.2006" # or Change date format using "01/02/2006" as default date?
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
 
 [markup]
   [markup.goldmark]

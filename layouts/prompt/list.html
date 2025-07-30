@@ -15,6 +15,9 @@
               {{ .Params.emoji | default "🐾" }} {{ .Title }}
             </summary>
             <div class="mt-2 prose prose-pink max-w-none">
+              {{ with .Params.cover.image }}
+                <img src="{{ . }}" alt="{{ $.Params.cover.alt | default $.Title }}" class="rounded-lg shadow mb-4">
+              {{ end }}
               {{ .Content | markdownify }}
             </div>
           </details>
