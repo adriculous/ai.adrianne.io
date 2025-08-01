@@ -38,6 +38,9 @@
                     h1: { color: theme('colors.ink') },
                     h2: { color: theme('colors.ink') },
                     h3: { color: theme('colors.ink') },
+                    h4: { color: theme('colors.ink') },
+                    h5: { color: theme('colors.ink') },
+                    h6: { color: theme('colors.ink') },
                     code: { color: theme('colors.ink') },
                   },
                 },
@@ -80,11 +83,41 @@
         color: #1f2937;
       }
 
-      .prose a,
+      .prose a {
+        color: #0ea5e9; /* Tailwind sky-500 */
+        text-decoration: underline;
+        text-underline-offset: 2px;
+      }
+
+      .prose a:hover {
+        color: #0284c7; /* Tailwind sky-600 */
+      }
+
+      .prose h1 {
+        color: #1f2937; /* Keep h1 in ink for strong readability */
+      }
+
+      .prose h2 {
+        color: #f472b6; /* pastel pink (Tailwind rose-400) */
+      }
+
+      .prose h3 {
+        color: #60a5fa; /* pastel blue (Tailwind blue-400) */
+      }
+
+      .prose h4 {
+        color: #a78bfa; /* lavender (Tailwind violet-400) */
+      }
+
+      .prose h5 {
+        color: #34d399; /* minty green (Tailwind emerald-400) */
+      }
+
+      .prose h6 {
+        color: #facc15; /* sunflower gold (Tailwind yellow-400) */
+      }
+      
       .prose strong,
-      .prose h1,
-      .prose h2,
-      .prose h3,
       .prose code {
         color: #1f2937;
       }
