@@ -1,7 +1,9 @@
 ---
 title: "Prompt Case Report: Prompted by Adrianne"
-date: August 1, 2025
-lastmod: August 1, 2025
+date: 2025-08-01
+lastmod: 2025-08-01
+displayDate: "August 1, 2025"
+displayLastmod: "August 1, 2025"
 emoji: "🌸"
 tags: ["portfolio", "prompt engineering", "Hugo", "Tailwind CSS"]
 categories: ["Case Reports"]

@@ -1,8 +1,10 @@
 ---
 title: "Prompted by Adrianne"
 description: "A pastel-themed prompt engineering portfolio built with Hugo, Tailwind CSS, and a dash of ✨kawaii chaos✨."
-date: August 1, 2025
-lastmod: August 1, 2025
+date: 2025-08-01
+lastmod: 2025-08-01
+displayDate: "August 1, 2025"
+displayLastmod: "August 1, 2025"
 emoji: "🪄"
 featuredImage: "/images/screenshots/pba-homepage.png"
 tags: ["portfolio", "Hugo", "Tailwind CSS", "prompt engineering", "AI"]
