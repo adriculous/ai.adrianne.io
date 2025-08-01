@@ -43,6 +43,7 @@ The overall structure follows a familiar pattern:
 - 🧵 **Prompts** — individual use cases and experiments, organized as case reports.
 - 🧪 **Projects** — broader builds, collaborations, and long-form showcases.
 - 📝 **Blog** — reflections, rants, raves, and reading on AI culture and tech ethics.
+- 🛝 **Playground** - side projects and fun stuff prompted with AI.
 - 🌸 **About** — a quick introduction to who I am, what I do, and why prompt engineering matters to me.
 - 💌 **Contact & Colophon** — powered by Formspree and sprinkled with gratitude.
 
