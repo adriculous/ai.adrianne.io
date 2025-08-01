@@ -1,7 +1,9 @@
 # 📜 Changelog
 
 All notable changes to *Prompted by Adrianne* will be documented here.
+
 This project adheres to [semantic versioning](https://semver.org/) and vibes-based glittery chaos.
+
 Live Site: [Prompted by Adrianne](https://ai.adrianne.io)
 
 ---
