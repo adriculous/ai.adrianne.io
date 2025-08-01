@@ -1,6 +1,6 @@
 ---
 title: "Behind the Sparkles: How I Built Prompted by Adrianne"
-date: 2025-07-30T23:55:00-07:00
+date: 2025-07-31T23:55:00-07:00
 lastmod: 2025-07-31T23:55:00-07:00
 emoji: "🌸"
 tags: ["portfolio", "Hugo", "Tailwind CSS", "prompt engineering", "case study"]
@@ -12,6 +12,8 @@ cover:
   alt: "Screenshot of Prompted by Adrianne homepage"
 draft: false
 ---
+
+_Published: **August 1, 2025**_
 
 I’ve built countless portfolio sites over the years — quirky little corners of the internet to showcase my hobby projects, share tips for fellow web tinkers, or just test out something new. But when I started browsing *professional* portfolios, I thought: *maybe I should sound more serious too.* So I did. And the result? Lifeless. Generic. Boring. Like a dev-shaped gray blob trying to fit into a template that was never made for me.
 

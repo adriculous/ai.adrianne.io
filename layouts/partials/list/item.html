@@ -20,10 +20,10 @@
         <p class="text-sm text-ink/70">{{ .Params.summary }}</p>
       {{ end }}
       <p class="text-xs text-ink/40">
-        📅 {{ .Date.Format "2006-01-02" }}
-        {{ if ne .Date.Unix .Lastmod.Unix }}
-          • 🛠️ Updated: {{ .Lastmod.Format "2006-01-02" }}
-        {{ end }}
+        📅 {{ .Date.Format "January 2, 2006" }}
+          {{ if ne .Date.Unix .Lastmod.Unix }}
+            • 🛠️ Updated: {{ .Lastmod.Format "January 2, 2006" }}
+          {{ end }}
       </p>
     </div>
   </a>

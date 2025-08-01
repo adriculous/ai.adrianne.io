@@ -8,10 +8,8 @@
 
     {{ if .Params.date }}
     <p class="text-sm text-ink/60 mb-4">
-      📅 {{ .Date.Format "2006-01-02" }}
-      {{ if ne .Date.Unix .Lastmod.Unix }}
-        • 🛠️ Updated: {{ .Lastmod.Format "2006-01-02" }}
-      {{ end }}
+      🗓️ {{ .Date.Format "January 2, 2006" }}
+      {{ with .Lastmod }}🔧 Updated: {{ .Format "January 2, 2006" }}{{ end }}
     </p>
     {{ end }}
 

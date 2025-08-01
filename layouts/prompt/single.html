@@ -7,10 +7,10 @@
       </h1>
       <p class="text-sm text-ink/50">
         {{ if .Date }}
-          📅 {{ .Date.Format "2006-01-02" }}
+          📅 {{ .Date.Format "January 2, 2006" }}
         {{ end }}
         {{ if and (.Date) (ne .Date.Unix .Lastmod.Unix) }}
-          • 🛠️ Updated: {{ .Lastmod.Format "2006-01-02" }}
+          • 🛠️ Updated: {{ .Lastmod.Format "January 2, 2006" }}
         {{ end }}
       </p>
     </header>
