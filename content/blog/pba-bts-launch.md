@@ -1,6 +1,6 @@
 ---
 title: "Behind the Sparkles: How I Built Prompted by Adrianne"
-date: 2025-07-31T23:55:00-07:00
+date: 2025-07-30T23:55:00-07:00
 lastmod: 2025-07-31T23:55:00-07:00
 emoji: "🌸"
 tags: ["portfolio", "Hugo", "Tailwind CSS", "prompt engineering", "case study"]

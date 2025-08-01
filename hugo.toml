@@ -2,6 +2,7 @@ baseURL = "https://ai.adrianne.io/"
 languageCode = "en-us"
 title = "Prompted by Adrianne"
 pagination.pagerSize = 10
+timezone = "America/Los_Angeles"
 
 # Pastel mode if needed
 enableEmoji = true
