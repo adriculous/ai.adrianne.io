@@ -1,61 +1,61 @@
 {{ define "main" }}
 <section class="mx-auto max-w-3xl px-4 py-8">
-  <div class="bg-[#f5eaff] rounded-2xl shadow-md p-6">
-    <h1 class="text-4xl font-bold mb-2 flex items-center">
-      <span class="mr-2">💖🖋️</span> {{ .Title }}
+  <div class="{{ .Params.boxColor | default "bg-[#f3f0ff]" }} rounded-2xl shadow-md p-6">
+    <h1 class="text-4xl font-bold mb-4">
+      {{ with .Params.emoji }}{{ . }} {{ end }}{{ .Title }}
     </h1>
     {{ with .Params.description }}
-      <p class="text-xl text-ink/70 mb-6">{{ . }}</p>
+      <p class="text-lg text-ink/70 mb-6">{{ . }}</p>
     {{ end }}
 
-    {{ range .Pages }}
-    <details class="mb-4">
-      <summary class="cursor-pointer bg-white rounded-lg shadow flex justify-between items-center px-4 py-3 font-semibold hover:bg-gray-50">
-        <span>🖋 {{ .Title }}</span>
-        <span class="text-2xl text-ink/40">▸</span>
-      </summary>
-
-      <div class="bg-white border rounded-lg shadow-inner mt-2 p-4">
-        <!-- Featured Image -->
-        <img 
-          src="{{ with .Params.featuredImage }}{{ . }}{{ else }}/images/ldn-mode-no-images.png{{ end }}" 
-          alt="Preview of {{ .Title }}" 
-          class="rounded-lg mb-4 shadow"
-        />
-
-        <!-- Date & Meta -->
-        <div class="text-sm text-gray-500 mb-2 flex flex-wrap gap-4 items-center">
-          <span>📅 {{ .Date.Format "2006-01-02" }}</span>
-          {{ if ne .Date.Unix .Lastmod.Unix }}
-            <span>🛠️ Updated: {{ .Lastmod.Format "2006-01-02" }}</span>
-          {{ end }}
-        </div>
-
-        <!-- Tags -->
-        {{ if .Params.tags }}
-        <div class="text-sm text-gray-500 mb-2">
-          <span>📌 
-            {{ range $i, $tag := .Params.tags }}
-              {{ if $i }}, {{ end }}{{ $tag }}
-            {{ end }}
+    <div class="space-y-4">
+      {{ range .Pages }}
+      <details class="bg-white rounded-xl shadow-sm p-4 border border-gray-200 group">
+        <summary class="cursor-pointer flex justify-between items-center font-semibold text-lg">
+          <span>
+            {{ with .Params.emoji }}{{ . }} {{ end }}{{ .Title }}
           </span>
-        </div>
-        {{ end }}
+          <span class="text-pink-500 group-open:rotate-90 transition-transform">➤</span>
+        </summary>
 
-        <!-- Summary -->
-        {{ if .Params.summary }}
-          <p class="mb-4">{{ .Params.summary }}</p>
-        {{ end }}
+        <div class="mt-4 space-y-3">
+          {{ with .Params.featuredImage }}
+          <img 
+            src="{{ . }}" 
+            alt="Featured image for {{ $.Title }}"
+            class="rounded-lg mb-2 shadow"
+          />
+          {{ else }}
+          <img 
+            src="/images/ldn-mode-no-images.png" 
+            alt="No featured image" 
+            class="rounded-lg mb-2 shadow"
+          />
+          {{ end }}
 
-        <!-- Read More Button -->
-        <div class="flex justify-end">
-          <a href="{{ .RelPermalink }}" class="inline-block bg-pink-200 text-pink-800 px-4 py-1 rounded-full text-sm font-semibold shadow hover:bg-pink-300 transition">
-            🍡 Read More
-          </a>
+          {{ if .Date }}
+          <p class="text-sm text-ink/50">
+            📅 {{ .Date.Format "2006-01-02" }}
+            {{ if ne .Date.Unix .Lastmod.Unix }}
+              • 🛠️ Updated: {{ .Lastmod.Format "2006-01-02" }}
+            {{ end }}
+          </p>
+          {{ end }}
+
+          {{ if .Summary }}
+          <p>{{ .Summary }}</p>
+          {{ end }}
+
+          <div class="flex justify-end">
+            <a href="{{ .RelPermalink }}"
+              class="inline-block px-3 py-1 mt-2 bg-pink-100 hover:bg-pink-200 text-ink text-sm font-semibold rounded-full transition">
+              🌈 Read More →
+            </a>
+          </div>
         </div>
-      </div>
-    </details>
-    {{ end }}
+      </details>
+      {{ end }}
+    </div>
   </div>
 </section>
 {{ end }}

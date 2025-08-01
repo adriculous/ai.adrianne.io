@@ -1,28 +1,30 @@
-<div class="bg-white p-4 border border-gray-200 rounded-lg shadow-sm flex flex-col justify-between">
-  <img 
-    src="{{ with .Params.featuredImage }}{{ . }}{{ else }}/images/ldn-mode-no-images.png{{ end }}" 
-    alt="Cover image for {{ .Title }}" 
-    class="rounded-lg mb-3"
-  />
-
-  <h2 class="text-2xl font-semibold mb-1">
-    {{ with .Params.emoji }}{{ . }} {{ end }}{{ .Title }}
-  </h2>
-
-  <div class="text-sm text-ink/50 flex gap-3 items-center mb-2">
-    <span>📅 {{ .Date.Format "2006-01-02" }}</span>
-    {{ if ne .Date.Unix .Lastmod.Unix }}
-    <span>🕒 Updated on {{ .Lastmod.Format "2006-01-02" }}</span>
+<article class="bg-white rounded-2xl shadow-md overflow-hidden border border-gray-200 transition hover:shadow-lg">
+  <a href="{{ .RelPermalink }}" class="block">
+    {{ with .Params.featuredImage }}
+      <img 
+        src="{{ . | relURL }}" 
+        alt="Cover image for {{ $.Title }}"
+        class="w-full h-48 object-cover"
+      />
+    {{ else }}
+      <img 
+        src="/images/ldn-mode-no-images.png" 
+        alt="No featured image for {{ .Title }}" 
+        class="w-full h-48 object-cover"
+      />
     {{ end }}
-  </div>
 
-  {{ if .Params.description }}
-  <p class="text-ink/80 mb-4">{{ .Params.description }}</p>
-  {{ end }}
-
-  <div class="mt-auto flex justify-end">
-    <a href="{{ .RelPermalink }}" class="inline-block bg-pink-200 hover:bg-pink-300 text-pink-800 font-semibold py-1 px-3 rounded-full text-sm transition-all">
-      🧋 Read More
-    </a>
-  </div>
-</div>
+    <div class="p-4 space-y-2">
+      <h2 class="text-xl font-bold text-ink">{{ .Title }}</h2>
+      {{ if .Params.summary }}
+        <p class="text-sm text-ink/70">{{ .Params.summary }}</p>
+      {{ end }}
+      <p class="text-xs text-ink/40">
+        📅 {{ .Date.Format "2006-01-02" }}
+        {{ if ne .Date.Unix .Lastmod.Unix }}
+          • 🛠️ Updated: {{ .Lastmod.Format "2006-01-02" }}
+        {{ end }}
+      </p>
+    </div>
+  </a>
+</article>

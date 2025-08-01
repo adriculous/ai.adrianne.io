@@ -1,28 +1,61 @@
 {{ define "main" }}
-  <div class="px-6 py-20 min-h-screen {{ .Params.boxColor | default "bg-white" }} rounded-2xl shadow-xl p-10 sm:p-12 lg:p-16 space-y-6">
-    <div class="max-w-3xl mx-auto space-y-4 font-mono text-lg">
-      <h1 class="text-3xl font-bold mb-2">
-        {{ with .Params.emoji }}{{ . }} {{ end }}{{ .Title }}
-      </h1>
-      {{ if .Params.description }}
-        <p class="mb-6 text-ink/80">{{ .Params.description }}</p>
-      {{ end }}
+<section class="mx-auto max-w-3xl px-4 py-8">
+  <div class="{{ .Params.boxColor | default "bg-[#f3f0ff]" }} rounded-2xl shadow-md p-6">
+    <h1 class="text-4xl font-bold mb-4">
+      {{ with .Params.emoji }}{{ . }} {{ end }}{{ .Title }}
+    </h1>
+    {{ with .Params.description }}
+      <p class="text-lg text-ink/70 mb-6">{{ . }}</p>
+    {{ end }}
 
-      <div class="space-y-4">
-        {{ range .Pages }}
-          <details class="group border border-ink/20 rounded-xl p-4 transition-all bg-white/70 shadow hover:shadow-lg">
-            <summary class="cursor-pointer font-semibold text-ink hover:text-pink-500 transition-all">
-              {{ .Params.emoji | default "🐾" }} {{ .Title }}
-            </summary>
-            <div class="mt-2 prose prose-pink max-w-none">
-              {{ with .Params.cover.image }}
-                <img src="{{ . }}" alt="{{ $.Params.cover.alt | default $.Title }}" class="rounded-lg shadow mb-4">
-              {{ end }}
-              {{ .Content | markdownify }}
-            </div>
-          </details>
-        {{ end }}
-      </div>
+    <div class="space-y-4">
+      {{ range .Pages }}
+      <details class="bg-white rounded-xl shadow-sm p-4 border border-gray-200 group">
+        <summary class="cursor-pointer flex justify-between items-center font-semibold text-lg">
+          <span>
+            {{ with .Params.emoji }}{{ . }} {{ end }}{{ .Title }}
+          </span>
+          <span class="text-pink-500 group-open:rotate-90 transition-transform">➤</span>
+        </summary>
+
+        <div class="mt-4 space-y-3">
+          {{ with .Params.cover.image }}
+            <img 
+              src="{{ . }}" 
+              alt="{{ with $.Params.cover.alt }}{{ . }}{{ else }}Featured image for {{ $.Title }}{{ end }}"
+              class="rounded-lg mb-2 shadow"
+            />
+          {{ else }}
+            <img 
+              src="/images/ldn-mode-no-images.png" 
+              alt="No featured image" 
+              class="rounded-lg mb-2 shadow"
+            />
+          {{ end }}
+
+          {{ if .Date }}
+          <p class="text-sm text-ink/50">
+            📅 {{ .Date.Format "2006-01-02" }}
+            {{ if ne .Date.Unix .Lastmod.Unix }}
+              • 🛠️ Updated: {{ .Lastmod.Format "2006-01-02" }}
+            {{ end }}
+          </p>
+          {{ end }}
+
+          {{ if .Summary }}
+          <p>{{ .Summary }}</p>
+          {{ end }}
+
+          <div class="flex justify-end">
+            <a href="{{ .RelPermalink }}"
+              class="inline-block px-3 py-1 mt-2 bg-pink-100 hover:bg-pink-200 text-ink text-sm font-semibold rounded-full transition">
+              🌈 Read More →
+            </a>
+          </div>
+        </div>
+      </details>
+      {{ end }}
     </div>
   </div>
+</section>
 {{ end }}

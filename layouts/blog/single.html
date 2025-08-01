@@ -1,28 +1,44 @@
 {{ define "main" }}
-<section class="mx-auto max-w-3xl px-4 py-8">
-  <div class="bg-[#fff9f0] rounded-2xl shadow-md p-6">
-    <h1 class="text-4xl font-bold mb-4 flex items-center">
-      {{ with .Params.emoji }}<span class="mr-2">{{ . }}</span>{{ end }}
+<section class="mx-auto max-w-3xl px-4 py-10">
+  <div class="bg-[#fff3e7] rounded-2xl shadow-md p-6">
+
+    <h1 class="text-4xl font-bold mb-2">
       {{ .Title }}
     </h1>
 
-    {{ partial "blog/post-meta.html" . }}
-
-    {{ if .Params.featuredImage }}
-      <img src="{{ .Params.featuredImage }}" alt="Cover image for {{ .Title }}" class="rounded-lg mb-6">
+    {{ if .Params.date }}
+    <p class="text-sm text-ink/60 mb-4">
+      📅 {{ .Date.Format "2006-01-02" }}
+      {{ if ne .Date.Unix .Lastmod.Unix }}
+        • 🛠️ Updated: {{ .Lastmod.Format "2006-01-02" }}
+      {{ end }}
+    </p>
     {{ end }}
 
-    <div class="prose prose-p:text-[1rem] prose-li:my-1 prose-img:rounded-lg max-w-none mb-6">
+    {{ with .Params.featuredImage }}
+    <img
+      src="{{ . | relURL }}"
+      alt="Cover image for {{ $.Title }}"
+      class="rounded-lg mb-6 shadow"
+    />
+    {{ else }}
+    <img
+      src="/images/ldn-mode-no-images.png"
+      alt="No featured image for {{ $.Title }}"
+      class="rounded-lg mb-6 shadow"
+    />
+    {{ end }}
+
+    <article class="prose text-ink dark:prose-invert">
       {{ .Content }}
+    </article>
+
+    <div class="mt-8">
+      <a href="/blog" class="inline-block px-4 py-2 bg-yellow-200 hover:bg-yellow-300 text-ink text-sm font-semibold rounded-full transition">
+        ← Back to Blog
+      </a>
     </div>
 
-    {{ with .Params.authorNote }}
-      <div class="bg-yellow-100 border-l-4 border-yellow-400 text-yellow-800 p-4 rounded-md text-sm">
-        ✍️ <strong>Author Note:</strong> {{ . }}
-      </div>
-    {{ end }}
-
-    {{ partial "blog/post-buttons.html" . }}
   </div>
 </section>
 {{ end }}
