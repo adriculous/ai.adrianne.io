@@ -4,9 +4,9 @@ A sparkly AI prompt engineering portfolio by [Adrianne Padua](https://adrianne.i
 
 ## 🧰 Tech Stack
 
-- ![Hugo logo](https://img.shields.io/badge/Built%20with-Hugo-blueviolet?logo=hugo) [Hugo](https://gohugo.io) for static site generation
-- ![Tailwind CSS logo](https://img.shields.io/badge/Styled%20with-Tailwind%20CSS-38B2AC?logo=tailwind-css&logoColor=white) [Tailwind CSS](https://tailwindcss.com) for styling
-- Hosted on [Hosting.com](https://www.hosting.com/) (formerly A2 Hosting)
+[![Built with Hugo](https://img.shields.io/badge/Built%20with-Hugo-8E44AD?style=for-the-badge&logo=hugo)](https://gohugo.io/)
+[![Styled with Tailwind CSS](https://img.shields.io/badge/Styled%20with-Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
+[![Hosted on Hosting.com](https://img.shields.io/badge/Hosted%20on-Hosting.com-1f2937?style=for-the-badge)](https://www.hosting.com/)
 
 ## ✨ Features
 
