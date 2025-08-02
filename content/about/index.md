@@ -29,6 +29,8 @@ I’m expanding my skills through hands-on projects and courses like:
 - IBM Gen AI Engineering  
 - Responsible Generative AI (U. Michigan)  
 - Python, SQL, Prompt Crafting & more!
+- ✅ [DeepLearning.AI: ChatGPT Prompt Engineering for Developers](https://learn.deeplearning.ai/chatgpt-prompt-eng/)
+
 
 You can see my progress throughout this site and my code playgrounds 🛠️
 
