@@ -19,12 +19,18 @@ featuredImage: "/images/promptitude-cert.png"
 ## 🌸 Current Highlights
 
 ### 🎓 AI & Prompt Engineering
+- **ChatGPT Prompt Engineering for Developers** - *DeepLearning.AI (Isa Fulford and Andrew Ng)* (2025)<br>
+  ***Focus***: *practical patterns, project building, and developer-first prompting workflows.
+  ✨ Now officially part of the PbA certified braincells™! 🧠💖*. <br>
+  [View Certificate](https://learn.deeplearning.ai/accomplishments/dde85908-d5ea-4cc1-820d-fddf5d903cea?usp=sharing)
 - **Certificate of Promptitude™** – *Prompted by Adrianne* (2025)  
-  *For exceptional skill in wrangling language models, crafting chaos into clarity, and slaying prompts with sparkle and humor.*  
+  *For exceptional skill in wrangling language models, crafting chaos into clarity, and slaying prompts with sparkle and humor. Awarded with ✨maximum vibes✨ by Ai-chan and Bun-Bun-kun.*
+
 
 ### 📊 Data Analytics
 - **Google Data Analytics Professional Certificate** – *Google/Coursera*  
-  *Core skills in data cleaning, visualization, SQL, and R for analytics workflows.*
+  *Core skills in data cleaning, visualization, SQL, and R for analytics workflows.*.<br> 
+  [View Certificate](https://www.credly.com/badges/700c5fe3-1444-4805-98cf-e5370b5d82dc/linked_in_profile)
 
 ### 💻 Web & Development
 - **Skillcrush Front-End Developer Blueprint** – *Skillcrush*  
