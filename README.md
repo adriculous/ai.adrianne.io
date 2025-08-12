@@ -41,6 +41,7 @@ A sparkly AI prompt engineering portfolio by [Adrianne Padua](https://adrianne.i
 ├── assets / static   # Images, fonts, stickers
 ├── themes            # (optional)
 └── hugo.toml         # Config file
+```
 
 ## 🗺️ Roadmap
 
