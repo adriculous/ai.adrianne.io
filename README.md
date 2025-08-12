@@ -53,20 +53,8 @@ A sparkly AI prompt engineering portfolio by [Adrianne Padua](https://adrianne.i
 - [ ] Aggregate "Latest Blogs" from all `adrianne.io` sub-sites
 
 ## 🗒️ Changelog
->Just the highlights - for the full techy goodness, check the [commit >history](https://github.com/adriculous/ai.adrianne.io/commits/main)
 
-### 2025-08-11
-- Added **Ethical AI Manifesto** page ♡
-- Added **Credentials** page with LinkedIn button + Font Awesome icon
-- Styled *Promptitude* certificate with pastel frame + Bun-Bun-kun
-- Updated *About* page layout + tidied link underline styles
-- Nav: Added new items + reorganized for better flow
-- Home page glow up (literally ✨)
-
-### 2025-08-02 - 2025-08-10
-- Playground accordion sections
-- Fixed color & layout bugs
-- Added floaty Sozai and sticker options
+For a full list of updates and fixes, check out the [CHANGELOG](CHANGELOG.md).
 
 ## 🤝 Acknowledgments
 
