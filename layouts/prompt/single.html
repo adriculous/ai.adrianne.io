@@ -23,8 +23,16 @@
     />
     {{ end }}
 
-    <div class="prose prose-zinc max-w-none dark:prose-invert">
+    <div class="prose prose-neutral text-neutral-900 max-w-none dark:prose-invert [&_blockquote]:text-neutral-800">
       {{ .Content }}
+
+      <!-- Return to Prompts page -->
+      <div class="mt-10 text-right">
+        <a href="/prompt/"
+          class="inline-block bg-pink-100 hover:bg-pink-200 text-pink-800 font-semibold px-5 py-2 rounded-full shadow-md transition underline-offset-0 !no-underline hover:!no-underline">
+          🏷️ Back to Prompts
+        </a>
+      </div>
     </div>
 
     {{ with .Params.tags }}

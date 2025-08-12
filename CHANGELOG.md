@@ -8,6 +8,24 @@ Live Site: [Prompted by Adrianne](https://ai.adrianne.io)
 
 ---
 
+## [2025-08-11] Prompted by Adrianne Site Polish ✨
+
+### Added
+- ✅ Added `Work` menu item and moved `Prompt`, `Projects`, and `Playground` as `Work` submenus. The `Work` link is an anchor link, and will be lead to the **Featured Sections** part of the homepage
+- ✅ Added `Ethical AI Manifesto` and `Credentials` as submenus of `About`
+- ✅ "Back to Prompts" button on single prompt pages (aligned right, styled with emoji, consistent with the rest of the site)
+- ✅ Link to full `CHANGELOG.md` in `README.md` instead of duplicate changelog section
+
+### Fixed
+- 🎨 Light text color issue on blockquote sections in prompt posts (now properly styled and readable)
+- 💅 Removed underline from custom "Back to Prompts" button link
+
+### Improved
+- 📐 Ensured layout consistency between Prompt and Projects detail pages
+- 🧼 Removed Markdown-generated link from `pba.md` to avoid double-rendered buttons
+
+---
+
 ## [1.0.0] - 2025-08-01
 ### ✨ First Public Launch
 - Deployed fully functional AI prompt engineering portfolio

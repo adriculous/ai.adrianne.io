@@ -96,5 +96,3 @@ Here’s a preview:
 **Prompted by Adrianne** wasn’t just a site. It was proof that AI can be a true creative partner — *if* you’re thoughtful, intentional, and curious.
 
 And yes, sparkles help. 🌸
-
-[← Back to Prompts](/prompts)
