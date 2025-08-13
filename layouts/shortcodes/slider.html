@@ -1,0 +1,6 @@
+<div class="overflow-x-auto whitespace-nowrap flex space-x-4 mt-6 pb-4">
+  {{ $images := .Inner | transform.Unmarshal }}
+  {{ range $images }}
+    <img src="{{ .src }}" alt="{{ .alt | default "Screenshot" }}" class="inline-block h-64 rounded-lg shadow" />
+  {{ end }}
+</div>

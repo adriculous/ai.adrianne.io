@@ -8,6 +8,38 @@ Live Site: [Prompted by Adrianne](https://ai.adrianne.io)
 
 ---
 
+## [2025-08-12] New Prompt Case Report: "Web Cakes Layter 1" 🍓
+
+### 💫 Web Cakes Layer 1 (HTML with Bun-Bun-kun)
+
+- Added new prompt post: `webcakes-layer1.md`
+- Included fluffy HTML prompt design, example response, and tips section
+- Enabled syntax highlighting via `hugo.toml`:
+  ```toml
+  [markup.highlight]
+  noClasses = true
+  style = "github"
+  ```
+- Fixed iA Writer smart quote issues (converted to straight quotes)
+- Removed broken `{{< gallery >}}` shortcode
+- Rebuilt screenshot gallery using Markdown + Tailwind CSS grid layout
+- Linked thumbnails to full-size `.jpeg` files
+- Added gallery caption:
+*Each screenshot captures a sweet slice of Bun-Bun-kun’s cozy coding magic. Click to view in full size~ 🍓*
+
+### 🖼️ Prompt Vault UX
+
+- Refined prompt card text in the Prompt Vault
+- Verified card navigation and styling consistency
+
+### ⚒️ Misc Fixes
+
+- Cleaned Markdown spacing and line breaks
+- Renamed image files for better organization
+- Cleaned up `baseof.html` and divided each section into partials (`head.html`, `footer.html`, etc.). An external stylesheet `main.css` was also created to house the inline CSS
+
+---
+
 ## [2025-08-11] Prompted by Adrianne Site Polish ✨
 
 ### Added
@@ -26,7 +58,7 @@ Live Site: [Prompted by Adrianne](https://ai.adrianne.io)
 
 ---
 
-## [1.0.0] - 2025-08-01
+## 2025-08-01 [1.0.00]
 ### ✨ First Public Launch
 - Deployed fully functional AI prompt engineering portfolio
 - Styled with Tailwind CSS and pastel chaos

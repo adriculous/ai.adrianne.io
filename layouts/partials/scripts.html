@@ -1,0 +1,58 @@
+<script>
+  // 🌸 Navbar hide on scroll
+  const navbar = document.getElementById("navbar");
+  let lastScroll = 0;
+  window.addEventListener("scroll", () => {
+    const current = window.scrollY;
+    navbar.classList.toggle("scrolled", current > lastScroll);
+    lastScroll = current;
+  });
+
+  // ✨ Toggle stickers + button label
+  const toggleBtn = document.getElementById("stickerToggle");
+  if (toggleBtn) {
+    toggleBtn.addEventListener("click", () => {
+      document.body.classList.toggle("hide-stickers");
+      const isHidden = document.body.classList.contains("hide-stickers");
+      toggleBtn.textContent = isHidden ? "✨ Show Stickers ✨" : "✨ Hide Stickers ✨";
+    });
+  }
+
+  // 💫 Drag + spin on drag
+  document.querySelectorAll(".sticker").forEach((el) => {
+    el.addEventListener("mousedown", (e) => {
+      el.classList.add("spin");
+      const shiftX = e.clientX - el.getBoundingClientRect().left;
+      const shiftY = e.clientY - el.getBoundingClientRect().top;
+      const onMouseMove = (e) => { el.style.left = e.pageX - shiftX + "px"; el.style.top = e.pageY - shiftY + "px"; };
+      const onMouseUp = () => {
+        document.removeEventListener("mousemove", onMouseMove);
+        el.removeEventListener("mouseup", onMouseUp);
+        setTimeout(() => el.classList.remove("spin"), 1000);
+      };
+      document.addEventListener("mousemove", onMouseMove);
+      el.addEventListener("mouseup", onMouseUp);
+    });
+    el.ondragstart = () => false;
+  });
+
+  // 📱 Toggle mobile menu
+  const menuToggle = document.getElementById("menuToggle");
+  const mobileMenu = document.getElementById("mobileMenu");
+  if (menuToggle && mobileMenu) {
+    menuToggle.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  }
+
+  // 📱 Mobile submenu toggles
+  document.querySelectorAll('[data-submenu]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const id = btn.getAttribute('data-submenu');
+      const panel = document.getElementById(id);
+      panel.classList.toggle('hidden');
+      const icon = btn.querySelector('.fa-chevron-down');
+      if (icon) icon.classList.toggle('rotate-180');
+    });
+  });
+</script>
