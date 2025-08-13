@@ -8,7 +8,7 @@ Live Site: [Prompted by Adrianne](https://ai.adrianne.io)
 
 ---
 
-## [2025-08-12] New Prompt Case Report: "Web Cakes Layter 1" 🍓
+## [2025-08-12] New Prompt Case Report: "Web Cakes Layer 1" 🍓
 
 ### 💫 Web Cakes Layer 1 (HTML with Bun-Bun-kun)
 
