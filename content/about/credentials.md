@@ -1,5 +1,5 @@
 ---
-title: "Certifications"
+title: "Credentials"
 layout: "single"
 description: "A showcase of my certifications and learning achievements"
 emoji: "📜"
@@ -22,7 +22,7 @@ featuredImage: "/images/promptitude-cert.png"
 - **ChatGPT Prompt Engineering for Developers** - *DeepLearning.AI (Isa Fulford and Andrew Ng)* (2025)<br>
   ***Focus***: *practical patterns, project building, and developer-first prompting workflows.
   ✨ Now officially part of the PbA certified braincells™! 🧠💖*. <br>
-  [View Certificate](https://learn.deeplearning.ai/accomplishments/dde85908-d5ea-4cc1-820d-fddf5d903cea?usp=sharing)
+  [View](https://learn.deeplearning.ai/accomplishments/dde85908-d5ea-4cc1-820d-fddf5d903cea?usp=sharing)
 - **Certificate of Promptitude™** – *Prompted by Adrianne* (2025)  
   *For exceptional skill in wrangling language models, crafting chaos into clarity, and slaying prompts with sparkle and humor. Awarded with ✨maximum vibes✨ by Ai-chan and Bun-Bun-kun.*
 
@@ -30,7 +30,7 @@ featuredImage: "/images/promptitude-cert.png"
 ### 📊 Data Analytics
 - **Google Data Analytics Professional Certificate** – *Google/Coursera*  
   *Core skills in data cleaning, visualization, SQL, and R for analytics workflows.*.<br> 
-  [View Certificate](https://www.credly.com/badges/700c5fe3-1444-4805-98cf-e5370b5d82dc/linked_in_profile)
+  [View](https://www.credly.com/badges/700c5fe3-1444-4805-98cf-e5370b5d82dc/linked_in_profile)
 
 ### 💻 Web & Development
 - **Skillcrush Front-End Developer Blueprint** – *Skillcrush*  
@@ -41,8 +41,7 @@ featuredImage: "/images/promptitude-cert.png"
 <div class="not-prose p-4 rounded-2xl bg-pink-100 border-l-4 border-pink-300 shadow-sm mt-6 text-gray-800">
   <p class="mb-3 flex items-center">
     <span class="mr-2">📌</span>
-    For the full list of my certifications – including those outside AI & development –
-    visit my **LinkedIn Certifications** page:
+    For the full list of my certifications – including those outside AI & development – visit my **LinkedIn Certifications** page:
   </p>
   <a href="https://www.linkedin.com/in/adrianne-padua/details/certifications/"
      target="_blank" rel="noopener noreferrer"

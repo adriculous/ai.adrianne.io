@@ -61,7 +61,7 @@ You can see my progress throughout this site and my code playgrounds 🛠️
 - 🏡: 🇺🇸 YAY AREA~!!🌉
 - 🗣️: 🇵🇭🇺🇸🇯🇵
 - 📚: Novels & Manga: mystery, detective, suspense, history/period, with a mix of comedy and romance in between
-- 📺: Mystery, Detective, Suspense, history/period, anime, J-drama, K-drama, C-drama, (sometimes)Filipino dramas
+- 📺: Mystery, Detective, Suspense, history/period, anime, J-drama, K-drama, C-drama, (sometimes) Filipino dramas
 - 🎮: Nintendo Switch OLED, Steam Deck, Sims 4
 - 🎨: Kawaii characters, surface patterns, isometric artwork, landscape/scenery, (currently learning) anime/manga character design
 

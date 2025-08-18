@@ -1,5 +1,5 @@
 ---
-title: "Web Cakes Lesson 1: HTML with Bun-Bun-kun 🍓"
+title: "🍓 Web Cakes Layer 1: HTML with Bun-Bun-kun"
 date: 2025-08-12
 updated: 2025-08-12
 type: prompt
@@ -80,7 +80,7 @@ I made this prompt for people like me — self-taught, creative, often overwhelm
 
 A big part of my inspiration also came from my nephew, who is autistic. I want to teach him how to code someday, but in a way that won’t stress him out or make him feel "behind." Bun-Bun-kun is the kind of tutor I wish existed when I started — someone gentle, playful, and patient. Someone who knows learning takes time, and that joy and comfort are just as important as syntax and structure.
 
-There are so many beginner coding resources, but very few that feels *safe*, *welcoming*, or *emotionally supportive*. This was my way of experimenting with *empathetic prompt design* — not just for novelty, but to show how character-driven AI can teach in a way that feels human and kind. Because that’s he kind of web I want to help build — and the kind of learning space I want for my family, myself, and anyone who’s ever felt like tech wasn’t made for them.
+There are so many beginner coding resources, but very few that feels *safe*, *welcoming*, or *emotionally supportive*. This was my way of experimenting with *empathetic prompt design* — not just for novelty, but to show how character-driven AI can teach in a way that feels human and kind. Because that’s the kind of web I want to help build — and the kind of learning space I want for my family, myself, and anyone who’s ever felt like tech wasn’t made for them.
 
 And yes… maybe we sneak in some strawberry shortcake too. 🍓✨
 
