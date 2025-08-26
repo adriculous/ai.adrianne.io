@@ -8,6 +8,12 @@ Live Site: [Prompted by Adrianne](https://ai.adrianne.io)
 
 ---
 
+## 2025-08-26: [v1.0.5] Re-fixed the mobile responsiveness
+
+- 📱 Our fix from last night still did not apply on the site when viewed on the phone (Samsung Galaxy S23 Ultra). We discovered that our animated footer was causing the responsive mess. We finally fixed it by altering the animated footer.
+
+---
+
 ## 2025-08-26: [v1.0.4] More fresh content!
 
 ### Added

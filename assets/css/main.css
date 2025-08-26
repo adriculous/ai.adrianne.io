@@ -32,6 +32,10 @@ body::before {
   z-index: -10;
 }
 
+/* fluid media + clamp sideways scroll */
+img, video, svg { max-width: 100%; height: auto; display: block; }
+* { box-sizing: border-box; }
+
 /* prose colors */
 .prose { color: #1f2937; }
 .prose a { color: #0ea5e9; text-decoration: underline; text-underline-offset: 2px; }
@@ -55,10 +59,14 @@ body::before {
 
 /* --- Footer wave + soft magical sparkles --- */
 .footer-wave {
-  position: relative;        
-  padding-top: 1.5rem;       
-  overflow: visible;
+  position: relative;
+  padding-top: 1.5rem;
+  overflow: hidden;   /* clip wide sparkles on mobile */
   z-index: 0;
+}
+
+@media (min-width: 768px) {
+  .footer-wave { overflow: visible; } /* let it breathe on md+ */
 }
 
 /* the pink wavy line */
@@ -80,17 +88,30 @@ body::before {
 .footer-wave .sparkle-pink,
 .footer-wave .sparkle-yellow,
 .footer-wave .sparkle-blue {
-  position:absolute;
-  top:2px;                   
-  left:-60%;
-  width:220%;
-  height:12px;
-  pointer-events:none;
-  z-index:2;
-  filter:blur(.8px);
-  mix-blend-mode:plus-lighter;
-  opacity:.42;
-  animation: sparkle-drift 18s linear infinite, sparkle-bob 3s ease-in-out infinite, sparkle-twinkle 2.5s ease-in-out infinite;
+  position: absolute;
+  top: 2px;
+  left: -20%;     /* was -60% */
+  width: 140%;    /* was 220% */
+  height: 12px;
+  pointer-events: none;
+  z-index: 2;
+  filter: blur(.8px);
+  mix-blend-mode: plus-lighter;
+  opacity: .42;
+  animation:
+    sparkle-drift 18s linear infinite,
+    sparkle-bob 3s ease-in-out infinite,
+    sparkle-twinkle 2.5s ease-in-out infinite;
+}
+
+/* bring back the dramatic width on tablets/desktop */
+@media (min-width: 768px) {
+  .footer-wave .sparkle-pink,
+  .footer-wave .sparkle-yellow,
+  .footer-wave .sparkle-blue {
+    left: -60%;
+    width: 220%;
+  }
 }
 
 /* per-layer tuning */
@@ -161,7 +182,13 @@ body::before {
 .fa-chevron-down { transition: transform .2s ease; }
 .rotate-180 { transform: rotate(180deg); }
 
-/* Tailwind CSS custom utilities */
+/* Tailwind CSS @layter and custom utilities */
+@layer base {
+  html, body { height: 100%; }
+  body { overflow-x: hidden; }                 /* stop sideways scroll */
+  img, video, svg { max-width: 100%; height: auto; }
+}
+
 @layer utilities {
   /* 🍔 Guarantee a big enough touch target */
   #menuToggle {
@@ -171,6 +198,22 @@ body::before {
   .touch-target {
     min-width: 44px;
     min-height: 44px;
+  }
+  /* Sticker toggle placement (raise it a bit + respect safe areas) */
+  .sticker-toggle,
+  #stickerToggle {
+    position: fixed;
+    right: max(1rem, env(safe-area-inset-right));
+    /* ↑ move higher by increasing bottom */
+    bottom: calc(2.25rem + env(safe-area-inset-bottom)); /* was near 1rem */
+    z-index: 60; /* above stickers */
+  }
+
+  @media (min-width: 768px) {
+    .sticker-toggle,
+    #stickerToggle {
+      bottom: 2.75rem; /* a touch higher on tablet/desktop too */
+    }
   }
   .debug-hitbox {
     outline: 2px dashed hotpink !important;
@@ -185,10 +228,33 @@ body::before {
     animation: wiggle 0.4s ease-in-out;
   }
   figcaption {
-    @apply text-sm text-center mt-2;
+    font-size: 0.875rem;      /* text-sm */
+    text-align: center;       /* text-center */
+    margin-top: 0.5rem;       /* mt-2 */
     color: #1f2937;
     background-color: rgba(255, 255, 255, 0.6);
     padding: 0.25rem 0.5rem;
-    border-radius: 0.375rem; /* rounded-md */
+    border-radius: 0.375rem;  /* rounded-md */
+  }
+  /* layout guards */
+  .min-w-0 { 
+    min-width: 0;
+  }                                  
+  /* fix flex/grid children overflow */
+  .wrap-anywhere { 
+    overflow-wrap: anywhere;
+    word-break: break-word; 
+  }
+  .scroll-x { 
+    overflow-x: auto; 
+    -webkit-overflow-scrolling: touch; 
+  }
+
+  /* responsive 16:9 embed helper */
+  .embed { 
+    position: relative; width: 100%; aspect-ratio: 16 / 9; 
+  }
+  .embed > iframe { 
+    position: absolute; inset: 0; width: 100%; height: 100%; 
   }
 }
