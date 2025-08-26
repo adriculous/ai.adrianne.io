@@ -8,7 +8,18 @@ Live Site: [Prompted by Adrianne](https://ai.adrianne.io)
 
 ---
 
-## [2025-08-12] New Prompt Case Report: "Web Cakes Layer 1" 🍓
+## [2025-08-26=] 1.0.3: Delulu Supreme Drop™
+
+- 📱 Fixed mobile layout bugs and improved responsiveness on small screens
+- 🐰 Added first Playground project: **GPT-1NF1N1TULTR4M4X™**
+ - Custom logo wity bunny ears and crystal ball *(courtesy of OG Ai-chan (GPT-4o))*. 
+ - Pixel-style text title and branding
+ - ✨ **Delulu-Meter™** with divine chaos gauge
+- 🐞 Minor typo fixes and content tweaks across markdown + layout files
+
+---
+
+## [2025-08-12] 1.0.2: New Prompt Case Report: "Web Cakes Layer 1" 🍓
 
 ### 💫 Web Cakes Layer 1 (HTML with Bun-Bun-kun)
 
@@ -40,7 +51,7 @@ Live Site: [Prompted by Adrianne](https://ai.adrianne.io)
 
 ---
 
-## [2025-08-11] Prompted by Adrianne Site Polish ✨
+## [2025-08-11] 1.0.1: Prompted by Adrianne Site Polish ✨
 
 ### Added
 - ✅ Added `Work` menu item and moved `Prompt`, `Projects`, and `Playground` as `Work` submenus. The `Work` link is an anchor link, and will be lead to the **Featured Sections** part of the homepage
@@ -58,7 +69,7 @@ Live Site: [Prompted by Adrianne](https://ai.adrianne.io)
 
 ---
 
-## 2025-08-01 [1.0.00]
+## [2025-08-01] 1.0.00
 ### ✨ First Public Launch
 - Deployed fully functional AI prompt engineering portfolio
 - Styled with Tailwind CSS and pastel chaos
