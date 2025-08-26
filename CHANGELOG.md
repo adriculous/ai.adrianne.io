@@ -8,7 +8,7 @@ Live Site: [Prompted by Adrianne](https://ai.adrianne.io)
 
 ---
 
-## [2025-08-26=] 1.0.3: Delulu Supreme Drop™
+## [2025-08-26] 1.0.3: Delulu Supreme Drop™
 
 - 📱 Fixed mobile layout bugs and improved responsiveness on small screens
 - 🐰 Added first Playground project: **GPT-1NF1N1TULTR4M4X™**
