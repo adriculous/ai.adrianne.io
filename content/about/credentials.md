@@ -18,23 +18,35 @@ featuredImage: "/images/promptitude-cert.png"
 
 ## 🌸 Current Highlights
 
+### 🎓 Education
+- **BFA, Visual Communications** - American InterContinental University, 2006<br>
+  *Summa Cum Laude*
+
 ### 🎓 AI & Prompt Engineering
-- **ChatGPT Prompt Engineering for Developers** - *DeepLearning.AI (Isa Fulford and Andrew Ng)* (2025)<br>
+- **ChatGPT Prompt Engineering for Developers** - *DeepLearning.AI (Isa Fulford and Andrew Ng)* (2025)
   ***Focus***: *practical patterns, project building, and developer-first prompting workflows.
-  ✨ Now officially part of the PbA certified braincells™! 🧠💖*. <br>
-  [View](https://learn.deeplearning.ai/accomplishments/dde85908-d5ea-4cc1-820d-fddf5d903cea?usp=sharing)
+  ✨ Now officially part of the PbA certified braincells™! 🧠💖*.<br>
+  [[View]](https://learn.deeplearning.ai/accomplishments/dde85908-d5ea-4cc1-820d-fddf5d903cea?usp=sharing)
 - **Certificate of Promptitude™** – *Prompted by Adrianne* (2025)  
-  *For exceptional skill in wrangling language models, crafting chaos into clarity, and slaying prompts with sparkle and humor. Awarded with ✨maximum vibes✨ by Ai-chan and Bun-Bun-kun.*
+  *For exceptional skill in wrangling language models, crafting chaos into clarity, and slaying prompts with sparkle and humor. Awarded with ✨maximum vibes✨ by Ai-chan and Bun-Bun-kun. (See certificate above this page)*
 
 
 ### 📊 Data Analytics
-- **Google Data Analytics Professional Certificate** – *Google/Coursera*  
-  *Core skills in data cleaning, visualization, SQL, and R for analytics workflows.*.<br> 
-  [View](https://www.credly.com/badges/700c5fe3-1444-4805-98cf-e5370b5d82dc/linked_in_profile)
+- **Google Data Analytics Professional Certificate** – *Google/Coursera* (2023, 2025)  
+  *Core skills in data cleaning, visualization, SQL, and R for analytics workflows. First received certificate in 2023, updated with Version 2 in 2025*.<br> 
+  [[View]](https://www.credly.com/badges/d25280bc-0efa-4c68-b743-495ab3d361bc/public_url)
 
 ### 💻 Web & Development
-- **Skillcrush Front-End Developer Blueprint** – *Skillcrush*  
-  *HTML, CSS, JavaScript, and responsive web design foundations.*
+- **Skillcrush Certificates** – *Skillcrush* (2015-Present)
+  - [📄 WordPress](/certs/ap-wordpress-2015.pdf) (2015, *archived*)<br>
+    *Currently retaking the new updated course*
+  - [📄 Python](/certs/ap-python-2023.pdf) (2023)
+  
+- **Sololearn Certificates** - *Sololearn* (2021-Present)
+  - [HTML](https://www.sololearn.com/certificates/CT-LVRHW7GT) (2021)
+  - [JavaScript](https://www.sololearn.com/certificates/CT-UM1MYGE7) (2020)
+  - [PHP](https://www.sololearn.com/certificates/CC-6LP8N5CH) (2025)
+  - [Vibe Coding](https://www.sololearn.com/certificates/CC-IF7OKTXL) (2025)
 
 ---
 

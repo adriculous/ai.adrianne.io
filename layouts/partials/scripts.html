@@ -37,12 +37,35 @@
   });
 
   // 📱 Toggle mobile menu
+  // const menuToggle = document.getElementById("menuToggle");
+  // const mobileMenu = document.getElementById("mobileMenu");
+  // if (menuToggle && mobileMenu) {
+  //  menuToggle.addEventListener("click", () => {
+  //    mobileMenu.classList.toggle("hidden");
+  //  });
+  //}
+
+  // 📱 Toggle mobile menu with a11y + scroll lock
   const menuToggle = document.getElementById("menuToggle");
   const mobileMenu = document.getElementById("mobileMenu");
   if (menuToggle && mobileMenu) {
+    const openMenu = () => {
+      mobileMenu.classList.remove("hidden");
+      menuToggle.setAttribute("aria-expanded", "true");
+      document.body.style.overflow = "hidden";
+    };
+    const closeMenu = () => {
+      mobileMenu.classList.add("hidden");
+      menuToggle.setAttribute("aria-expanded", "false");
+      document.body.style.overflow = "";
+    };
     menuToggle.addEventListener("click", () => {
-      mobileMenu.classList.toggle("hidden");
+      mobileMenu.classList.contains("hidden") ? openMenu() : closeMenu();
     });
+    // Close on link click
+    mobileMenu.querySelectorAll("a").forEach(a => a.addEventListener("click", closeMenu));
+    // Close on Escape
+    document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeMenu(); });
   }
 
   // 📱 Mobile submenu toggles

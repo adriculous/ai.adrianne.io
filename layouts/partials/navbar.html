@@ -1,11 +1,13 @@
 <!-- 🌸 Sticky Navbar with Mobile Support -->
-<header id="navbar" class="fixed top-0 left-0 w-full z-40 bg-white/60 backdrop-blur-md shadow-md px-6 py-4 flex justify-between items-center hide-on-scroll transition-transform overflow-visible">
+<header id="navbar" class="fixed top-0 left-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-black/5 shadow-sm px-4 sm:px-6 h-14 flex justify-between items-center hide-on-scroll transition-transform">
   <div class="text-lg font-bold text-ink">
     🌸 <span class="italic">Prompted by Adrianne</span>
   </div>
 
   <!-- Hamburger toggle -->
-  <button id="menuToggle" class="lg:hidden text-2xl text-ink focus:outline-none">
+  <button id="menuToggle" type="button" aria-controls="mobileMenu" aria-expanded="false"
+    class="lg:hidden touch-target inline-flex items-center justify-center h-12 w-12 text-3xl text-ink rounded-md hover:bg-black/5 focus:outline-none focus-visible:ring focus-visible:ring-pink-300 debug-hitbox"
+    aria-label="Toggle menu">
     <i class="fas fa-bars"></i>
   </button>
 
@@ -35,7 +37,7 @@
 </header>
 
 <!-- Mobile Menu (collapsible submenus) -->
-<div id="mobileMenu" class="lg:hidden fixed top-16 left-0 w-full bg-white/90 backdrop-blur-md shadow-md z-30 hidden">
+<nav id="mobileMenu" class="lg:hidden fixed inset-x-0 top-14 bottom-0 z-[60] bg-white/95 backdrop-blur-md shadow-md hidden overflow-auto">
   <div class="flex flex-col px-6 py-4 text-sm">
     <ul class="flex flex-col">
       {{ range $i, $item := .Site.Menus.main }}
@@ -64,4 +66,4 @@
       {{ end }}
     </ul>
   </div>
-</div>
+</nav>  <!-- 👈 final tag MUST be </nav> -->
