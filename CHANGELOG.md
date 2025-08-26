@@ -8,7 +8,26 @@ Live Site: [Prompted by Adrianne](https://ai.adrianne.io)
 
 ---
 
-## [2025-08-26] 1.0.3: Delulu Supreme Drop™
+## 2025-08-26: [v1.0.4] More fresh content!
+
+### Added
+- 🌀 New blog post: “The Delulu AI You Didn’t Ask For… But Got Anyway”
+  - A satirical yet thoughtful introduction to GPT‑1NF1N1TULTR4M4X™, a parody AI model built in the Playground
+  - Covers the chaotic naming origin, purpose behind the parody, and reflections on AI overreliance
+- 🌀 New case report: “Prompt Case Report: GPT‑1NF1N1TULTR4M4X™”
+  - Breaks down prompt design, UI components, mascot/logo, and ethical reasoning behind the Delulu bot
+  - Linked from the blog post
+
+### Changed
+- Shortened blog title for mobile friendliness and visual fit
+- Updated `static/images` with featured image for the Delulu post
+
+### Notes
+- This brings *Prompted by Adrianne* to **3 case reports**, **1 project post**, and **1 Playground build** — now officially job-ready 💼💖  
+
+---
+
+## 2025-08-26: [v1.0.3] Delulu Supreme Drop™
 
 - 📱 Fixed mobile layout bugs and improved responsiveness on small screens
 - 🐰 Added first Playground project: **GPT-1NF1N1TULTR4M4X™**
@@ -19,7 +38,7 @@ Live Site: [Prompted by Adrianne](https://ai.adrianne.io)
 
 ---
 
-## [2025-08-12] 1.0.2: New Prompt Case Report: "Web Cakes Layer 1" 🍓
+## 2025-08-12: [v1.0.2] New Prompt Case Report: "Web Cakes Layer 1" 🍓
 
 ### 💫 Web Cakes Layer 1 (HTML with Bun-Bun-kun)
 
@@ -51,7 +70,7 @@ Live Site: [Prompted by Adrianne](https://ai.adrianne.io)
 
 ---
 
-## [2025-08-11] 1.0.1: Prompted by Adrianne Site Polish ✨
+## 2025-08-11: [v.1.0.1] Prompted by Adrianne Site Polish ✨
 
 ### Added
 - ✅ Added `Work` menu item and moved `Prompt`, `Projects`, and `Playground` as `Work` submenus. The `Work` link is an anchor link, and will be lead to the **Featured Sections** part of the homepage
@@ -69,7 +88,7 @@ Live Site: [Prompted by Adrianne](https://ai.adrianne.io)
 
 ---
 
-## [2025-08-01] 1.0.00
+## 2025-08-01: [v1.0.00] Initial launching
 ### ✨ First Public Launch
 - Deployed fully functional AI prompt engineering portfolio
 - Styled with Tailwind CSS and pastel chaos
