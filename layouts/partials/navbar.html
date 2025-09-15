@@ -43,25 +43,35 @@
       {{ range $i, $item := .Site.Menus.main }}
         <li class="py-2 border-b border-dashed border-pink-400 last:border-b-0">
           {{ if $item.HasChildren }}
-            <button class="w-full flex items-center justify-between py-2 font-medium hover:underline underline-offset-4 decoration-wavy decoration-pink-400"
-                    data-submenu="submenu-{{ $item.Identifier | default (printf "m%d" $i) }}">
-              <span>{{ $item.Name }}</span>
-              <span class="text-ink/60"><i class="fa-solid fa-chevron-down"></i></span>
-            </button>
-            <ul id="submenu-{{ $item.Identifier | default (printf "m%d" $i) }}" class="mt-1 pl-4 space-y-1 hidden">
-              {{ range $item.Children }}
-                <li>
-                  <a href="{{ .URL }}" class="block py-1 hover:underline underline-offset-4 decoration-wavy decoration-pink-400">
-                    {{ .Name }}
-                  </a>
-                </li>
-              {{ end }}
-            </ul>
-          {{ else }}
-            <a href="{{ $item.URL }}" class="block py-2 hover:underline underline-offset-4 decoration-wavy decoration-pink-400">
-              {{ $item.Name }}
-            </a>
-          {{ end }}
+  <div class="flex items-center justify-between">
+    <!-- Parent link stays clickable -->
+    <a href="{{ $item.URL }}" class="py-2 font-medium hover:underline underline-offset-4 decoration-wavy decoration-pink-400">
+      {{ $item.Name }}
+    </a>
+
+    <!-- Chevron button only toggles submenu -->
+    <button class="text-ink/60"
+            aria-expanded="false"
+            aria-controls="submenu-{{ $item.Identifier | default (printf "m%d" $i) }}"
+            data-submenu="submenu-{{ $item.Identifier | default (printf "m%d" $i) }}">
+      <i class="fa-solid fa-chevron-down"></i>
+    </button>
+  </div>
+
+  <ul id="submenu-{{ $item.Identifier | default (printf "m%d" $i) }}" class="mt-1 pl-4 space-y-1 hidden">
+    {{ range $item.Children }}
+      <li>
+        <a href="{{ .URL }}" class="block py-1 hover:underline underline-offset-4 decoration-wavy decoration-pink-400">
+          {{ .Name }}
+        </a>
+      </li>
+    {{ end }}
+  </ul>
+{{ else }}
+  <a href="{{ $item.URL }}" class="block py-2 hover:underline underline-offset-4 decoration-wavy decoration-pink-400">
+    {{ $item.Name }}
+  </a>
+{{ end }}
         </li>
       {{ end }}
     </ul>

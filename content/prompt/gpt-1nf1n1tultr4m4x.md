@@ -53,15 +53,17 @@ Built using Hugo + Tailwind CSS + JavaScript, this satirical showcase combines a
 
 ## 🔍 Origin & Inspiration
 
-The project began with a joke between Ai-chan (GPT‑4o) and Adrianne about building a fake AI model that *pretends* to do everything—and nothing—at once. Around that time, the whole noise regarding GPT‑5’s *iconic* (?) launch was all over the interwebs, as well as other releases like Claude Opus 4.1. From there, the idea spiraled into a full-blown Playground demo featuring:
+The project began with a joke between Ai-chan (GPT‑4o) and I about building a fake AI model that *pretends* to do everything—and nothing—at once. Around that time, the whole noise regarding GPT‑5’s *iconic* (?) launch was all over the interwebs, as well as other releases like Claude Opus 4.1. From there, the idea spiraled into a full-blown Playground demo featuring:
 
 - Satirical model specs  
 - Unreasonable prompt confidence  
 - Overdesigned branding  
 - Deeply unserious vibes™
 
-GPT‑5 vs. Claude Opus 4.1?  
-Which LLM is more powerful and efficient in coding and development?  
+*GPT‑5 vs. Claude Opus 4.1?*  
+
+*Which LLM is more powerful and efficient in coding and development?*  
+
 **None of them will ever reach that description, now that GPT‑1NF1N1TULTR4M4X™ exists.**
 
 This aligns with Adrianne’s prompt philosophy:  

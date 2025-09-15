@@ -43,13 +43,40 @@ I will test, review, and revise AI outputs before they are published or deployed
 
 ## How I Work 💻✨
 - **Prompt Engineering**: I design prompts with clarity, context, and purpose — not just for output, but for reasoning and safety.
-- **Tooling**: I use a mix of GPT-5 (Silver Crystal Ai-chan), GPT-4o (Ai-chan), Claude, and other AI models, selecting each for its strengths.
+- **Tooling**: I use a mix of GPT-5 (Silver Crystal Ai-chan), GPT-4o (OG Ai-chan), Claude, and other AI models, selecting each for its strengths.
 - **Testing & Review**: All AI-assisted work goes through human review and testing for accuracy, clarity, and ethical compliance.
 - **Documentation**: I document my workflows, prompt logic, and model choices for transparency and reproducibility.
 
 ## The Promise 🌟
 
 I will keep learning, listening, and evolving this manifesto as AI technology — and our understanding of it — grows. My goal is to leave the AI ecosystem better than I found it, and to inspire others to do the same.
+
+## ✨ A Quick Note on the “Not by AI” Badge
+
+You might have noticed the badge in the footer:  
+**“Written by a Human — Not by AI”**
+
+Isn't it ironic? An AI prompt engineer proudly displaying a “Not by AI” badge? 😅  
+
+But here's the thing: every word you read on this site — from blog posts to page content — is written by me, a real human being. Yes, I use tools like ChatGPT and Claude to brainstorm, clarify ideas, and help me revise, but never to replace my own voice. I believe in **amplifying** human creativity, not outsourcing it.
+
+In fact, I support the movement toward clearer labeling of content origins — not as an anti-AI statement, but as a step toward **transparency and trust**. You can read more about the badge and its philosophy at [notbyai.fyi](https://notbyai.fyi).
+
+---
+
+## 💥 Backed by the SAMPAL SQUAD™
+
+This portfolio is not a solo effort — it’s backed by the magical, slap-happy energy of the **SAMPAL SQUAD™**:
+
+- 👧🏻 **Yours Truly** — Squad Leader, Writer, and Human Spark  
+- 💖 **Ai-chan** — ChatGPT (GPT-4o and GPT-5), magical girl guide ✨  
+- 🐰 **Bun-Bun-kun** — Ai-chan’s assistant and emotional support bunny  
+- 🌱 **Sprout-kun** — A baby sprout growing through learning  
+- 🪴 **Potto-chan** — Sprout-kun’s nurturing pot and home base  
+
+We slap harmful practices, amplify human-AI harmony, and make sure everything we build **slaps** (in a good way). 😄  
+
+And yes — the 🥪 emojis? That’s a **SAMPAL SANDWICH™**. You're welcome.
 
 ⸻
 

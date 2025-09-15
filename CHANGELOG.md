@@ -8,6 +8,30 @@ Live Site: [Prompted by Adrianne](https://ai.adrianne.io)
 
 ---
 
+## 2025-09-15: [v1.10] 🛠️ Big SAMPAL SQUAD Push
+
+### ✨ New Additions
+- Added **Not By AI** badge to footer (responsive + accessible)
+- Added section about Not By AI on the Indie Web blog post
+- Included "Written by a human..." message near footer
+- New character sticker added: **🌠 Comet-kun** (illustrator: yours truly)
+- Expanded **About** section to include full **SAMPAL SQUAD™** intro
+- Added 🥪 **Sampal Sandwich** reference and internal lore (bread emoji power!)
+
+### 📝 Content Updates
+- Revised **Manifesto** with new section on human authorship
+- Revised Indie Web blog post to clarify difference between AI-generated websites and AI-generated content
+- Added backlink to NotByAI explanation page
+- Added/linked more certs in the **Credentials** page
+
+### 🔧 Fixes & Layout Tweaks
+- Adjusted placements of footer stickers (Sprout-kun, Bun-Bun-kun, Potto-chan)
+- Smoothed spacing below "Written by a human" text
+- Footer layout improvements for responsiveness on mobile
+- Fixed the **About** link on the mobile version... I hope it works, I still have yet to check it on my phone...
+
+---
+
 ## 2025-08-26: [v1.0.5] Re-fixed the mobile responsiveness
 
 - 📱 Our fix from last night still did not apply on the site when viewed on the phone (Samsung Galaxy S23 Ultra). We discovered that our animated footer was causing the responsive mess. We finally fixed it by altering the animated footer.

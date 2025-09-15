@@ -30,7 +30,6 @@ There are other ways to reach out to me as well. Please find me on:
 ---
 
 ### 🌟 Psst... Got Kawaii Stickers to Share?
-Wanna donate your own stickers for the site? I’m still working on mine in Procreate,  
-but I’d love to include contributions from fellow creatives too! 💖
+Wanna donate your own stickers for the site? I’m still working on mine in Procreate, but I’d love to include contributions from fellow creatives too! 💖
 
 _Credit will absolutely go to you, of course. I ain't no art thief 😤_

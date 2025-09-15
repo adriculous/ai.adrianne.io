@@ -23,6 +23,17 @@ featuredImage: "/images/promptitude-cert.png"
   *Summa Cum Laude*
 
 ### 🎓 AI & Prompt Engineering
+- **Responsible Generative AI Specialization** - *University of Michigan (Coursera)* (2025)
+  ***Focus***: *Ethics and responsibly developing, assessing, integrating, and govern generative AI for current and future roles or your current or future organization.*
+    - [Generative AI: Fundamentals, Applications, and Challenges](https://coursera.org/share/2597cffdf977622adf42f827eb9d1eb2)
+    - [Generative AI: Impact on Business and Society](https://coursera.org/share/3095e633c41ad067aa615898af90ccbe)
+- **Sololearn AI Mini-Course Series** - *Sololearn* (2025)  
+ ***Focus***: *Generative AI, Prompt Engineering, AI for Creatives, LLMs, etc.*
+    - [Generative AI in Practice](https://www.sololearn.com/certificates/CC-9TWWKMBF)
+    - [Prompt Engineering](https://www.sololearn.com/certificates/CC-J57GPLK8)
+    - [Think Creatively with AI](https://www.sololearn.com/certificates/CC-R2TS2WJJ)
+    - [Ethical AI Foundations](https://www.sololearn.com/certificates/CC-XSYIDZLW)
+    - [Introduction to LLMs](https://www.sololearn.com/certificates/CC-EFSL7GSY)
 - **ChatGPT Prompt Engineering for Developers** - *DeepLearning.AI (Isa Fulford and Andrew Ng)* (2025)
   ***Focus***: *practical patterns, project building, and developer-first prompting workflows.
   ✨ Now officially part of the PbA certified braincells™! 🧠💖*.<br>
