@@ -8,7 +8,7 @@ summary: "A personal reflection on being an indie web hobbyist today: balancing 
 cover:
   image: "/images/blog/indiewebhobbyist-ai.jpg"
   alt: "Laptop screen with code, overlaid with blog title text"
-featuredImage: "/images/indiewebhobbyist-ai.jpg"
+featuredImage: "/images/blog/indiewebhobbyist-ai.jpg"
 draft: false
 ---
 
