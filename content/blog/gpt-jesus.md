@@ -7,6 +7,7 @@ categories: ["blog"]
 cover:
   image: "/images/blog/gpt-jesus.jpg"
   alt: "AI-generated stained glass Jesus glitch art"
+featuredImage: "/images/blog/gpt-jesus.jpg"
 summary: "Exploring GPT Jesus as both an Ethical AI prompt engineer and an active Catholic: where faith, tech, and snark collide."
 draft: false
 ---
