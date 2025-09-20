@@ -8,6 +8,16 @@ Live Site: [Prompted by Adrianne](https://ai.adrianne.io)
 
 ---
 
+## 2025-09-20: [v1.11] ✝️ Beware of the Golden Calf
+
+### ⭐️ New Additions
+- New blog post: **GPT Jesus: Water Into Vibes? 🤯✝️**
+
+### 🔧 Fixes
+- Moved a few blog post-specific images to the new `/static/images/blog/` folder for organization and consistency
+
+---
+
 ## 2025-09-15: [v1.10] 🛠️ Big SAMPAL SQUAD Push
 
 ### ✨ New Additions

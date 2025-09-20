@@ -6,7 +6,7 @@ type: blog
 tags: ["indie web", "AI", "ethics", "prompt engineering", "reaction"]
 summary: "A personal reflection on being an indie web hobbyist today: balancing creativity, experimentation, and ethical AI practices, while navigating elitist attitudes about what 'counts' as real web craft."
 cover:
-  image: "/images/indiewebhobbyist-ai.jpg"
+  image: "/images/blog/indiewebhobbyist-ai.jpg"
   alt: "Laptop screen with code, overlaid with blog title text"
 featuredImage: "/images/indiewebhobbyist-ai.jpg"
 draft: false
