@@ -27,7 +27,9 @@ I’m expanding my skills through hands-on projects and courses like:
 
 - Google AI Essentials  
 - IBM Gen AI Engineering  
-- Responsible Generative AI (U. Michigan)  
+- ~~Responsible Generative AI (U. Michigan)~~
+- Cybersecurity
+- Quality Assurance (QA) Testing
 - Python, SQL, Prompt Crafting, etc.
 
 Check out my [Credentials](/about/credentials/) page for more!

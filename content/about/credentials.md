@@ -24,9 +24,12 @@ featuredImage: "/images/promptitude-cert.png"
 
 ### 🎓 AI & Prompt Engineering
 - **Responsible Generative AI Specialization** - *University of Michigan (Coursera)* (2025)
-  ***Focus***: *Ethics and responsibly developing, assessing, integrating, and govern generative AI for current and future roles or your current or future organization.*
+  ***Focus***: *Ethics and responsibly developing, assessing, integrating, and govern generative AI for current and future roles or your current or future organization.*<br>
+  [[View]](https://www.coursera.org/account/accomplishments/specialization/OQQM7554SFL4)
     - [Generative AI: Fundamentals, Applications, and Challenges](https://coursera.org/share/2597cffdf977622adf42f827eb9d1eb2)
     - [Generative AI: Impact on Business and Society](https://coursera.org/share/3095e633c41ad067aa615898af90ccbe)
+    - [Generative AI: Governance, Policy, and Emerging Regulation](https://coursera.org/share/46b8caca6cbe99eecd3a83dbeafb15de)
+    - [Generative AI: Labor and the Future of Work](https://coursera.org/share/172ece8ba6a9a7b3f7a38c551233f4a3)
 - **Sololearn AI Mini-Course Series** - *Sololearn* (2025)  
  ***Focus***: *Generative AI, Prompt Engineering, AI for Creatives, LLMs, etc.*
     - [Generative AI in Practice](https://www.sololearn.com/certificates/CC-9TWWKMBF)
@@ -46,6 +49,14 @@ featuredImage: "/images/promptitude-cert.png"
 - **Google Data Analytics Professional Certificate** – *Google/Coursera* (2023, 2025)  
   *Core skills in data cleaning, visualization, SQL, and R for analytics workflows. First received certificate in 2023, updated with Version 2 in 2025*.<br> 
   [[View]](https://www.credly.com/badges/d25280bc-0efa-4c68-b743-495ab3d361bc/public_url)
+    - [Foundations: Data, Data, Everywhere](https://coursera.org/share/af7c7478fa501ecb7c4f5a6666d5024c)
+    - [Ask Questions to Make Data-Driven Decisions](https://coursera.org/share/97a9691d2237e583fbcc237fe6057678)
+    - [Prepare Data for Exploration](https://coursera.org/share/63c69beabec7e580789528ce42f1f898)
+    - [Process Data from Dirty to Clean](https://coursera.org/share/25e3c0dfc645101e8f59cc9f744a1840)
+    - [Analyze Data to Answer Questions](https://coursera.org/share/23ef21b062819d08fe12a24eee4b2b8e)
+    - [Share Data Through the Art of Visualization](https://coursera.org/share/8faab6022a042fe9bdb9247de312132a)
+    - [Data Analysis with R Programming](https://coursera.org/share/f908d511808a0bbb5280bb339296b970)
+    - [Google Data Analytics Capstone: Complete a Case Study](https://coursera.org/share/1d0be60ada81f00a47dfced37fa90677)
 
 ### 💻 Web & Development
 - **Skillcrush Certificates** – *Skillcrush* (2015-Present)

@@ -1,6 +1,6 @@
 # 🎀 Prompted by Adrianne
 
-A sparkly AI prompt engineering portfolio by [Adrianne Padua](https://adrianne.io), lovingly handcrafted with [Hugo](https://gohugo.io) 🛠️, [Tailwind CSS](https://tailwindcss.com) 🌸, and pastel kawaii chaos 🧁
+A sparkly AI prompt engineering portfolio by [Adrianne Padua](https://adrianne.me), lovingly handcrafted with [Hugo](https://gohugo.io) 🛠️, [Tailwind CSS](https://tailwindcss.com) 🌸, and pastel kawaii chaos 🧁
 
 > ✨ **Mission Statement:** AI should enhance human creativity, not replace it.  
 > Built with ethics, empathy, and a sprinkle of magical girl energy. 🌙
@@ -11,7 +11,7 @@ A sparkly AI prompt engineering portfolio by [Adrianne Padua](https://adrianne.i
 
 [![Built with Hugo](https://img.shields.io/badge/Built%20with-Hugo-8E44AD?style=for-the-badge&logo=hugo)](https://gohugo.io/)
 [![Styled with Tailwind CSS](https://img.shields.io/badge/Styled%20with-Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
-[![Deployed on Hosting.com](https://img.shields.io/badge/Deployed%20on-Hosting.com-1f2937?style=for-the-badge)](https://www.hosting.com/)
+[![Deployed on Netlify](https://img.shields.io/badge/Deployed%20on-Netlify-C0A9D9?style=for-the-badge&logo=netlify&logoColor=white)](https://www.netlify.com/)
 
 ---
 

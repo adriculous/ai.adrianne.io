@@ -8,9 +8,22 @@ Live Site: [Prompted by Adrianne](https://ai.adrianne.io)
 
 ---
 
+## 2025-09-22: [v1.12] 🎓 Responsible AI Certified
+
+### 🌠 Content Updates
+- New blog post: **Why I Pursued the Responsible Generative AI Certificate**
+- Added the certificate link in `About > Credentials` page
+- Updated `About` page to reflect current learning goals (including Responsible AI, Cybersecurity, and QA Testing)
+- Updated `Colophon` page to include **Adobe Express** and royalty-free image sources for blog featured images
+
+### 📝 Fixes
+- Changed Shields badge on `README.md` to **Netlify**, since I recently moved its hosting from **Hosting.com**. I decided to host Hugo-powered (or any SSG-powered) sites on Netlify for its ease of use and convenient updates.
+
+---
+
 ## 2025-09-20: [v1.11] ✝️ Beware of the Golden Calf
 
-### ⭐️ New Additions
+### ⭐️ Content Updates
 - New blog post: **GPT Jesus: Water Into Vibes? 🤯✝️**
 
 ### 🔧 Fixes
