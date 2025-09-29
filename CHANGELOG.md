@@ -8,6 +8,19 @@ Live Site: [Prompted by Adrianne](https://ai.adrianne.io)
 
 ---
 
+## 2025-09-29: [v1.13] 🔐 Privacy Notice and more
+
+### 💫 Content Updates
+- Added the **Privacy Notice** link to the page hosted by my link-in-bio/collective domain, [index.adrianne](https://adrianne.me/) on the footer partial
+- Also added the **Changelog** link on the footer, right next to the **Privacy Notice** link. This is for the people who are too lazy to go on my repo and want a direct link to the changelog instead
+- Added the sub-certifications of all the courses under the Google Data Analytics specialization in the `Credentials` page
+
+### 🔧 Fixes
+- Fixed the Markdown/HTML font-weight code on the **LinkedIn Certifications** box in the `Credentials` page
+- Made the site title `Prompted by Adrianne` linkable to the homepage on the navbar partial. Many users tend to click on the site's title/logo to return to the home page, rather than the `Home` link
+
+---
+
 ## 2025-09-22: [v1.12] 🎓 Responsible AI Certified
 
 ### 🌠 Content Updates

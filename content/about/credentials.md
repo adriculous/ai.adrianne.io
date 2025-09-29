@@ -74,8 +74,9 @@ featuredImage: "/images/promptitude-cert.png"
 
 <div class="not-prose p-4 rounded-2xl bg-pink-100 border-l-4 border-pink-300 shadow-sm mt-6 text-gray-800">
   <p class="mb-3 flex items-center">
-    <span class="mr-2">📌</span>
-    For the full list of my certifications – including those outside AI & development – visit my **LinkedIn Certifications** page:
+    <span class="mr-2">📌
+    For the full list of my certifications – including those outside AI & development – visit my <strong>LinkedIn Certifications</strong> page:
+    </span>
   </p>
   <a href="https://www.linkedin.com/in/adrianne-padua/details/certifications/"
      target="_blank" rel="noopener noreferrer"
