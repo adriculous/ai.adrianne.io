@@ -8,6 +8,12 @@ Live Site: [Prompted by Adrianne](https://ai.adrianne.io)
 
 ---
 
+## 2025-10-21: [v1.4] AI Idgit Chronicles I: The Math Ain't Mathing
+- Added new blog post: **AI Idgit Chronicles I: The Math Ain't Mathing (OpenAI's Embarrassing Equation)**
+- **AI Idgit Chronicles** series launched to highlight AI mishaps caused by human error, overconfidence, and lack of criticical thinking. I see a lot of anti-AI haters throwing shade at AI when in reality, many AI failures are due to people misusing or misunderstanding the technology
+
+---
+
 ## 2025-09-29: [v1.13] 🔐 Privacy Notice and more
 
 ### 💫 Content Updates
