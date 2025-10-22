@@ -1,259 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>{{ .Title }}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Fonts & Tailwind -->
-    <link href="https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,400;1,400&display=swap" rel="stylesheet" />
-    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              mono: ['"Victor Mono"', 'ui-monospace', 'SFMono-Regular', 'monospace'],
-            },
-            colors: {
-              paper: "#fefcf8",
-              ink: "#1f2937",
-            },
-            typography(theme) {
-              return {
-                ink: {
-                  css: {
-                    color: theme('colors.ink'),
-                    a: { color: theme('colors.ink'), textDecoration: 'underline' },
-                    strong: { color: theme('colors.ink') },
-                    h1: { color: theme('colors.ink') },
-                    h2: { color: theme('colors.ink') },
-                    h3: { color: theme('colors.ink') },
-                    code: { color: theme('colors.ink') },
-                  },
-                },
-              };
-            },
-          },
-        },
-      };
-    </script>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-    <style>
-      body {
-        font-family: "Victor Mono", monospace;
-        color: #1f2937;
-        background-color: transparent;
-        overflow-x: hidden;
-        position: relative;
-      }
-
-      body::before {
-        content: "";
-        position: fixed;
-        inset: 0;
-        background-color: #b0d9ed;
-        background-image: 
-          linear-gradient(to top left, #b0d9ed, #e4f0fb),
-          url("/images/dot-grid.webp");
-        background-size: 100% 100%, 18px 18px;
-        background-position: center, top left;
-        background-repeat: no-repeat, repeat;
-        background-attachment: fixed, scroll;
-        background-blend-mode: soft-light;
-        opacity: 0.9;
-        z-index: -10;
-      }
-
-      .prose {
-        color: #1f2937;
-      }
-
-      .prose a,
-      .prose strong,
-      .prose h1,
-      .prose h2,
-      .prose h3,
-      .prose code {
-        color: #1f2937;
-      }
-
-      .wavy-divider {
-        border-bottom: 2px;
-        border-style: solid;
-        border-image: url("data:image/svg+xml,%3Csvg width='100' height='6' viewBox='0 0 100 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 3 Q 25 6, 50 3 T 100 3' fill='transparent' stroke='%23f472b6' stroke-width='2'/%3E%3C/svg%3E") 0 0 100 stretch;
-        border-image-slice: 0 fill;
-        border-image-repeat: repeat;
-      }
-
-      .sticker {
-        position: absolute;
-        width: 64px;
-        height: auto;
-        transition: transform 0.4s ease;
-        will-change: transform;
-        animation: floatY 3s ease-in-out infinite, rotateZ 5s ease-in-out infinite;
-        z-index: 20;
-        cursor: grab;
-      }
-
-      .sticker.spin {
-        animation: spin 1s ease-in-out !important;
-      }
-
-      @keyframes floatY {
-        0%, 100% { transform: translateY(0); }
-        50% { transform: translateY(-10px); }
-      }
-
-      @keyframes rotateZ {
-        0% { rotate: 0deg; }
-        100% { rotate: 2deg; }
-      }
-
-      @keyframes spin {
-        0% { rotate: 0deg; }
-        100% { rotate: 720deg; }
-      }
-
-      .hide-stickers .sticker {
-        opacity: 0;
-      }
-
-      .hide-on-scroll.scrolled {
-        transform: translateY(-100%);
-        transition: transform 0.3s ease;
-      }
-    </style>
-  </head>
-
+  {{ partial "head.html" . }}
   <body class="bg-transparent overflow-x-hidden">
-
-    <!-- 🌸 Sticky Navbar with Mobile Support -->
-<header id="navbar" class="fixed top-0 left-0 w-full z-40 bg-white/60 backdrop-blur-md shadow-md px-6 py-4 flex justify-between items-center hide-on-scroll transition-transform">
-  <div class="text-lg font-bold text-ink">
-    🌸 <span class="italic">Prompted by Adrianne</span>
-  </div>
-
-  <!-- Hamburger toggle -->
-  <button id="menuToggle" class="lg:hidden text-2xl text-ink focus:outline-none">
-    <i class="fas fa-bars"></i>
-  </button>
-
-  <!-- Desktop nav -->
-  <nav id="mainNav" class="hidden lg:flex space-x-4 text-sm">
-    {{ range .Site.Menus.main }}
-      <a href="{{ .URL }}" class="hover:underline underline-offset-4 decoration-pink-400 decoration-wavy transition-all duration-200">
-        {{ .Name }}
-      </a>
-    {{ end }}
-  </nav>
-</header>
-
-<!-- Mobile Menu -->
-<div id="mobileMenu" class="lg:hidden fixed top-16 left-0 w-full bg-white/90 backdrop-blur-md shadow-md z-30 hidden">
-  <div class="flex flex-col px-6 py-4 text-sm">
-  {{ range $index, $item := .Site.Menus.main }}
-    <a href="{{ $item.URL }}"
-      class="py-2 border-b border-dashed border-pink-400 last:border-b-0 hover:underline underline-offset-4 decoration-wavy decoration-pink-400 transition-all duration-200">
-      {{ $item.Name }}
-    </a>
-  {{ end }}
-  </div>
-</div>
+    {{ partial "navbar.html" . }}
 
     <!-- 💾 Page Content -->
-    <main class="max-w-3xl mx-auto p-4">
+    <main class="max-w-3xl mx-auto p-4 pt-20">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 font-mono text-ink">
         {{ block "main" . }}{{ end }}
       </div>
 
       <!-- ✨ Toggle Stickers -->
-      <button id="stickerToggle" class="fixed bottom-4 right-4 bg-pink-200 text-ink font-semibold px-4 py-2 rounded-full shadow-lg hover:bg-pink-300 transition z-50 animate-pulse hover:animate-none">
+      <button id="stickerToggle" class="fixed bottom-8 md:bottom-10 right-4 bg-pink-200 text-ink font-semibold px-4 py-2 rounded-full shadow-lg hover:bg-pink-300 transition z-50 animate-pulse hover:animate-none">
         ✨ Hide Stickers ✨
       </button>
+
+      <!-- Mobile-only floating hamburger 
+       <button id="menuFab"
+          class="lg:hidden fixed bottom-4 right-4 h-12 w-12 rounded-full shadow-lg bg-white/90 backdrop-blur
+                border border-black/5 flex items-center justify-center text-3xl text-ink z-[55]">
+          <i class="fas fa-bars"></i>
+        </button> -->
     </main>
 
-    <!-- 🌟 Sozai Stickers -->
-    <img src="/images/sticker-heart.png" class="sticker" style="top: 20vh; left: 5vw;" title="Drag me!" />
-    <img src="/images/sticker-star.png" class="sticker" style="top: 50vh; left: 90vw;" title="Drag me!" />
-    <img src="/images/sticker-sleepy-cloud.png" class="sticker" style="top: 70vh; left: 10vw;" title="Drag me!" />
-    <img src="/images/sticker-panda.png" class="sticker" style="top: 35vh; left: 80vw;" title="Drag me!" />
-    <img src="/images/sticker-cat.png" class="sticker" style="top: 60vh; left: 45vw;" title="Drag me!" />
-    <img src="/images/sticker-boba.png" class="sticker" style="top: 80vh; left: 20vw;" title="Drag me!" />
-
-    <!-- 🌸 Footer -->
-    <footer class="text-center text-sm text-ink mt-12 mb-6 opacity-80 px-4 space-y-2">
-      <p>
-        © {{ now.Year }} Adrianne Padua • Prompt Engineer & Chaos Coder 🌸  
-      </p>
-      <div class="flex justify-center flex-wrap gap-x-4 gap-y-1 mt-2 text-base font-medium">
-        <a href="https://www.linkedin.com/in/adrianne-padua" target="_blank" title="LinkedIn" class="hover:underline">
-          <i class="fab fa-linkedin"></i>
-        <a href="https://bsky.app/profile/adrianne.io" target="_blank" title="Bluesky" class="hover:underline">
-          <i class="fa-solid fa-cloud"></i>
-        <a href="https://www.instagram.com/adrimarsink" target="_blank" title="Instagram" class="hover:underline">
-          <i class="fab fa-instagram"></i>
-        <a href="https://codepen.io/adriculous" target="_blank" title="CodePen" class="hover:underline">
-          <i class="fab fa-codepen"></i>
-        <a href="https://github.com/adriculous" target="_blank" title="GitHub" class="hover:underline">
-          <i class="fab fa-github"></i>
-      </div>
-    </footer>
-
-    <script>
-      // 🌸 Navbar hide on scroll
-      const navbar = document.getElementById("navbar");
-      let lastScroll = 0;
-      window.addEventListener("scroll", () => {
-        const current = window.scrollY;
-        navbar.classList.toggle("scrolled", current > lastScroll);
-        lastScroll = current;
-      });
-
-      // ✨ Toggle stickers + button label
-      const toggleBtn = document.getElementById("stickerToggle");
-      toggleBtn.addEventListener("click", () => {
-        document.body.classList.toggle("hide-stickers");
-        const isHidden = document.body.classList.contains("hide-stickers");
-        toggleBtn.textContent = isHidden ? "✨ Show Stickers ✨" : "✨ Hide Stickers ✨";
-      });
-
-      // 💫 Drag + spin on drag
-      document.querySelectorAll(".sticker").forEach((el) => {
-        el.addEventListener("mousedown", (e) => {
-          el.classList.add("spin");
-
-          const shiftX = e.clientX - el.getBoundingClientRect().left;
-          const shiftY = e.clientY - el.getBoundingClientRect().top;
-
-          const onMouseMove = (e) => {
-            el.style.left = e.pageX - shiftX + "px";
-            el.style.top = e.pageY - shiftY + "px";
-          };
-
-          const onMouseUp = () => {
-            document.removeEventListener("mousemove", onMouseMove);
-            el.removeEventListener("mouseup", onMouseUp);
-            setTimeout(() => el.classList.remove("spin"), 1000);
-          };
-
-          document.addEventListener("mousemove", onMouseMove);
-          el.addEventListener("mouseup", onMouseUp);
-        });
-
-        el.ondragstart = () => false;
-      });
-
-      // 📱 Toggle mobile menu
-      const menuToggle = document.getElementById("menuToggle");
-      const mobileMenu = document.getElementById("mobileMenu");
-
-      menuToggle.addEventListener("click", () => {
-        mobileMenu.classList.toggle("hidden");
-      });
-    </script>
+    {{ partial "stickers.html" . }}
+    {{ partial "footer.html" . }}
+    {{ partial "scripts.html" . }}
   </body>
 </html>

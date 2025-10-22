@@ -5,44 +5,42 @@
   </div>
 </main>
 
-<!-- 💖 Fancy Card Grid Section -->
-<section class="max-w-6xl mx-auto px-4 py-12">
-  <h2 class="text-2xl font-bold mb-6 text-center text-ink font-mono">🌟 Featured Sections</h2>
+<!-- Featured Section Cards -->
+<section id="featured" class="mt-12 px-6 scroll-mt-24">
+  <h2 class="text-3xl font-bold mb-8 text-center">🌟 Featured Sections</h2>
 
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-
-    <!-- Card 1 -->
-    <div class="bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-[1.02] hover:shadow-xl">
-      <a href="/prompt/" class="block bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-[1.02] hover:shadow-xl">
-        <h3 class="text-lg font-semibold mb-2">🤖 AI + Prompt Engineering</h3>
-        <p class="text-sm text-ink font-mono">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 px-4 sm:px-8 mt-10">
+      <!-- Prompt -->
+      <a href="/prompt" class="rounded-2xl bg-white p-6 shadow-lg transition-transform transform hover:-translate-y-1 hover:shadow-pink-200">
+        <h2 class="text-xl font-semibold mb-2">🍥 Prompt</h2>
+        <p>
           Prompt hacking, behavioral experiments, personas, and advanced prompt chaining for Gen AI — with kawaii vibes. 🌸
         </p>
       </a>
-    </div>
 
-    <!-- Card 2 -->
-    <div class="bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-[1.02] hover:shadow-xl">
-      <a href="/design/" class="block bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-[1.02] hover:shadow-xl">
-        <h3 class="text-lg font-semibold mb-2 inline-flex items-center gap-1">
-          <span>☁️ Ethical Design & Creativity</span>
-        </h3>
-        <p class="text-sm text-ink font-mono">
-          Pastel-coded accessibility, soft UI/UX, and aesthetic justice — because responsible tech should still sparkle. ✨
+      <!-- Projects -->
+      <a href="/projects" class="rounded-2xl bg-white p-6 shadow-lg transition-transform transform hover:-translate-y-1 hover:shadow-pink-200">
+        <h2 class="text-xl font-semibold mb-2">🛠️ Projects</h2>
+        <p>
+          A showcase of personal experiments, AI tools, and pastel-coded side quests — from idea to execution. 🌱
+        </p>
+      </a>
+
+      <!-- Playground -->
+      <a href="/playground" class="rounded-2xl bg-white p-6 shadow-lg transition-transform transform hover:-translate-y-1 hover:shadow-pink-200">
+        <h2 class="text-xl font-semibold mb-2">🍡 Playground</h2>
+        <p>
+          Snippets, Tailwind tricks, layout doodles, and live experiments. This is where the chaos happens (on purpose). 🖍️🖥️
+        </p>
+      </a>
+
+      <!-- Blog -->
+      <a href="/blog" class="rounded-2xl bg-white p-6 shadow-lg transition-transform transform hover:-translate-y-1 hover:shadow-pink-200">
+        <h2 class="text-xl font-semibold mb-2">📝 Blog</h2>
+        <p>
+          Insights, project updates, and behind-the-scenes chaos. Writing helps me think, so welcome to the brain dump zone. ✍️☁️
         </p>
       </a>
     </div>
-
-    <!-- Card 3 -->
-    <div class="bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-[1.02] hover:shadow-xl">
-      <a href="/playground/" class="block bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-[1.02] hover:shadow-xl">
-        <h3 class="text-lg font-semibold mb-2">🍥 Idea Playgrounds & Code Sozai</h3>
-        <p class="text-sm text-ink font-mono">
-          Snippets, Tailwind tricks, layout doodles, and live experiments. This is where the chaos happens (on purpose). 💻🎨
-        </p>
-      </a>
-    </div>
-
-  </div>
 </section>
 {{ end }}

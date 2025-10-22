@@ -1,0 +1,50 @@
+<head>
+  <meta charset="UTF-8" />
+  <title>
+    {{ if eq .RelPermalink "/" }}Prompted by Adrianne{{ else }}{{ .Title }} | Prompted by Adrianne{{ end }}
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/images/sticker-sleepy-cloud.png">
+
+  <!-- Fonts & Tailwind -->
+  <link href="https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,400;1,400&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { mono: ['"Victor Mono"', 'ui-monospace', 'SFMono-Regular', 'monospace'] },
+          colors: { paper: "#fefcf8", ink: "#1f2937" },
+          typography(theme) {
+            return { ink: { css: {
+              color: theme('colors.ink'),
+              a:{ color: theme('colors.ink'), textDecoration:'underline' },
+              strong:{ color: theme('colors.ink') },
+              h1:{ color: theme('colors.ink') }, h2:{ color: theme('colors.ink') },
+              h3:{ color: theme('colors.ink') }, h4:{ color: theme('colors.ink') },
+              h5:{ color: theme('colors.ink') }, h6:{ color: theme('colors.ink') },
+              code:{ color: theme('colors.ink') },
+            } } };
+          },
+        },
+      },
+    };
+  </script>
+
+    <!-- Allow Tailwind @apply in specific custom utilities -->
+  <style type="text/tailwindcss">
+    @layer utilities {
+      figcaption { @apply text-sm text-center mt-2; }
+    }
+  </style>
+
+
+   <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  {{/* Hugo Pipes: build and fingerprint main.css from /assets/css */}}
+  {{ $css := resources.Get "css/main.css" | resources.Minify | resources.Fingerprint }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+</head>

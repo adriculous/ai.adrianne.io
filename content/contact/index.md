@@ -2,40 +2,34 @@
 title: "Contact"
 layout: "single"
 description: "Let’s connect!"
+emoji: "📮"
+date: 0000-01-01T00:00:00Z  # ← Dummy value to prevent weird behavior
+lastmod: 2025-07-29
 boxColor: "bg-[#f8f3ff]" # pastel lavender
 ---
 
-<div class="space-y-6 font-mono text-lg max-w-xl mx-auto">
+Want to reach out? You can contact me using the form below.
 
-  <p>
-    📧 Feel free to email me at
-    <a href="mailto:hello@adrianne.io"
-       class="inline-block underline hover:decoration-wavy decoration-pink-400 hover:text-pink-500 transition-all">
-      hello@adrianne.io
-    </a> — I’d love to hear from you! 💌
-  </p>
+{{< contact-form >}}
 
-  <hr class="my-6 border-t border-ink/20" />
+---
 
-  <p>You can also find me on:</p>
+I also get that some of you don't really like using Contact Forms. I get you.
 
-  <ul class="space-y-2 pl-4 list-disc">
-    <li>🐙 <a href="https://github.com/adriculous" class="hover:underline">GitHub</a></li>
-    <li>💼 <a href="https://www.linkedin.com/in/adrianne-padua" class="hover:underline">LinkedIn</a></li>
-    <li>🎨 <a href="https://www.instagram.com/adrimarsink" class="hover:underline">Instagram</a></li>
-    <li>🐦 <a href="https://bsky.app/profile/adrianne.io" class="hover:underline">Bluesky</a></li>
-    <li>💻 <a href="https://codepen.io/adriculous" class="hover:underline">CodePen</a></li>
-  </ul>
+There are other ways to reach out to me as well. Please find me on:
 
-  <hr class="my-6 border-t border-dashed border-pink-300" />
+- 📫 [Email](mailto:hello@adrianne.io)
+- 🐙 [GitHub](https://github.com/adriculous)
+- 💼 [LinkedIn](https://www.linkedin.com/in/adrianne-padua)
+- 🎨 [Instagram](https://www.instagram.com/adrimarsink)
+- 🐦 [Bluesky](https://bsky.app/profile/adrianne.io)
+- 🐘 [Mastodon](https://mastodon.social/@adriculous)
+- 💻 [CodePen](https://codepen.io/adriculous)
+- 🌀 [Replit](https://replit.com/@adriculous)
 
-  <div class="text-center">
-    <p class="text-xl font-semibold mb-2">🌟 Got Stickers to Share?</p>
-    <p>
-      Wanna donate your own stickers for the site? I’m still working on mine in Procreate,  
-      but I’d love to include contributions from fellow creatives too! 💖
-    </p>
-    <p class="mt-2 italic text-sm text-ink/80">Credit will absolutely go to you, of course. I ain't no art thief 😤</p>
-  </div>
+---
 
-</div>
+### 🌟 Psst... Got Kawaii Stickers to Share?
+Wanna donate your own stickers for the site? I’m still working on mine in Procreate, but I’d love to include contributions from fellow creatives too! 💖
+
+_Credit will absolutely go to you, of course. I ain't no art thief 😤_

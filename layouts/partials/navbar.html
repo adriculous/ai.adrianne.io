@@ -1,0 +1,79 @@
+<!-- 🌸 Sticky Navbar with Mobile Support -->
+<header id="navbar" class="fixed top-0 left-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-black/5 shadow-sm px-4 sm:px-6 h-14 flex justify-between items-center hide-on-scroll transition-transform">
+  <div class="text-lg font-bold text-ink">
+    🌸 <span class="italic"><a href="https://ai.adrianne.io">Prompted by Adrianne</a></span>
+  </div>
+
+  <!-- Hamburger toggle -->
+  <button id="menuToggle" type="button" aria-controls="mobileMenu" aria-expanded="false"
+    class="lg:hidden touch-target inline-flex items-center justify-center h-12 w-12 text-3xl text-ink rounded-md hover:bg-black/5 focus:outline-none focus-visible:ring focus-visible:ring-pink-300 debug-hitbox"
+    aria-label="Toggle menu">
+    <i class="fas fa-bars"></i>
+  </button>
+
+  <!-- Desktop nav with stable hover dropdowns -->
+  <nav id="mainNav" class="hidden lg:block text-sm">
+    <ul class="flex gap-4 items-center">
+      {{ range .Site.Menus.main }}
+        <li class="relative group">
+          <a href="{{ .URL }}" class="inline-flex items-center hover:underline underline-offset-4 decoration-pink-400 decoration-wavy transition">
+            {{ .Name }}
+          </a>
+          {{ if .HasChildren }}
+            <ul class="absolute left-0 top-full opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-150 rounded-2xl shadow-lg bg-white/90 backdrop-blur p-2 z-50 min-w-[12rem]">
+              {{ range .Children }}
+                <li>
+                  <a href="{{ .URL }}" class="block px-3 py-2 rounded-lg hover:bg-pink-50">
+                    {{ .Name }}
+                  </a>
+                </li>
+              {{ end }}
+            </ul>
+          {{ end }}
+        </li>
+      {{ end }}
+    </ul>
+  </nav>
+</header>
+
+<!-- Mobile Menu (collapsible submenus) -->
+<nav id="mobileMenu" class="lg:hidden fixed inset-x-0 top-14 bottom-0 z-[60] bg-white/95 backdrop-blur-md shadow-md hidden overflow-auto">
+  <div class="flex flex-col px-6 py-4 text-sm">
+    <ul class="flex flex-col">
+      {{ range $i, $item := .Site.Menus.main }}
+        <li class="py-2 border-b border-dashed border-pink-400 last:border-b-0">
+          {{ if $item.HasChildren }}
+  <div class="flex items-center justify-between">
+    <!-- Parent link stays clickable -->
+    <a href="{{ $item.URL }}" class="py-2 font-medium hover:underline underline-offset-4 decoration-wavy decoration-pink-400">
+      {{ $item.Name }}
+    </a>
+
+    <!-- Chevron button only toggles submenu -->
+    <button class="text-ink/60"
+            aria-expanded="false"
+            aria-controls="submenu-{{ $item.Identifier | default (printf "m%d" $i) }}"
+            data-submenu="submenu-{{ $item.Identifier | default (printf "m%d" $i) }}">
+      <i class="fa-solid fa-chevron-down"></i>
+    </button>
+  </div>
+
+  <ul id="submenu-{{ $item.Identifier | default (printf "m%d" $i) }}" class="mt-1 pl-4 space-y-1 hidden">
+    {{ range $item.Children }}
+      <li>
+        <a href="{{ .URL }}" class="block py-1 hover:underline underline-offset-4 decoration-wavy decoration-pink-400">
+          {{ .Name }}
+        </a>
+      </li>
+    {{ end }}
+  </ul>
+{{ else }}
+  <a href="{{ $item.URL }}" class="block py-2 hover:underline underline-offset-4 decoration-wavy decoration-pink-400">
+    {{ $item.Name }}
+  </a>
+{{ end }}
+        </li>
+      {{ end }}
+    </ul>
+  </div>
+</nav>  <!-- 👈 final tag MUST be </nav> -->

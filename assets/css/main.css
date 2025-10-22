@@ -1,0 +1,260 @@
+/* ===== PbA site styles (moved out of head.html) ===== */
+
+/* iOS text zoom safeguard */
+html { 
+  -webkit-text-size-adjust: 100%; 
+}
+
+/* base styles */
+body {
+  font-family: "Victor Mono", monospace;
+  color: #1f2937; /* ink */
+  background-color: transparent;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* dreamy fixed background */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-color: #b0d9ed;
+  background-image:
+    linear-gradient(to top left, #b0d9ed, #e4f0fb),
+    url("/images/dot-grid.webp");
+  background-size: 100% 100%, 18px 18px;
+  background-position: center, top left;
+  background-repeat: no-repeat, repeat;
+  background-attachment: fixed, scroll;
+  background-blend-mode: soft-light;
+  opacity: 0.9;
+  z-index: -10;
+}
+
+/* fluid media + clamp sideways scroll */
+img, video, svg { max-width: 100%; height: auto; display: block; }
+* { box-sizing: border-box; }
+
+/* prose colors */
+.prose { color: #1f2937; }
+.prose a { color: #0ea5e9; text-decoration: underline; text-underline-offset: 2px; }
+.prose a:hover { color: #0284c7; }
+.prose h1 { color: #1f2937; }
+.prose h2 { color: #f472b6; }
+.prose h3 { color: #60a5fa; }
+.prose h4 { color: #a78bfa; }
+.prose h5 { color: #34d399; }
+.prose h6 { color: #facc15; }
+.prose strong, .prose code { color: #1f2937; }
+
+/* cute divider */
+.wavy-divider {
+  border-bottom: 2px;
+  border-style: solid;
+  border-image: url("data:image/svg+xml,%3Csvg width='100' height='6' viewBox='0 0 100 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 3 Q 25 6, 50 3 T 100 3' fill='transparent' stroke='%23f472b6' stroke-width='2'/%3E%3C/svg%3E") 0 0 100 stretch;
+  border-image-slice: 0 fill;
+  border-image-repeat: repeat;
+}
+
+/* --- Footer wave + soft magical sparkles --- */
+.footer-wave {
+  position: relative;
+  padding-top: 1.5rem;
+  overflow: hidden;   /* clip wide sparkles on mobile */
+  z-index: 0;
+}
+
+@media (min-width: 768px) {
+  .footer-wave { overflow: visible; } /* let it breathe on md+ */
+}
+
+/* the pink wavy line */
+.footer-wave::before {
+  content:"";
+  position:absolute;
+  left:0; right:0;
+  top:0;
+  height:12px;
+  background-image:url("data:image/svg+xml,%3Csvg width='100' height='6' viewBox='0 0 100 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 3 Q 25 6, 50 3 T 100 3' fill='transparent' stroke='%23f472b6' stroke-width='2'/%3E%3C/svg%3E");
+  background-repeat:repeat-x;
+  background-size:100px 6px;
+  opacity:.95;
+  pointer-events:none;
+  z-index:1;
+}
+
+/* sparkle layers */
+.footer-wave .sparkle-pink,
+.footer-wave .sparkle-yellow,
+.footer-wave .sparkle-blue {
+  position: absolute;
+  top: 2px;
+  left: -20%;     /* was -60% */
+  width: 140%;    /* was 220% */
+  height: 12px;
+  pointer-events: none;
+  z-index: 2;
+  filter: blur(.8px);
+  mix-blend-mode: plus-lighter;
+  opacity: .42;
+  animation:
+    sparkle-drift 18s linear infinite,
+    sparkle-bob 3s ease-in-out infinite,
+    sparkle-twinkle 2.5s ease-in-out infinite;
+}
+
+/* bring back the dramatic width on tablets/desktop */
+@media (min-width: 768px) {
+  .footer-wave .sparkle-pink,
+  .footer-wave .sparkle-yellow,
+  .footer-wave .sparkle-blue {
+    left: -60%;
+    width: 220%;
+  }
+}
+
+/* per-layer tuning */
+.footer-wave .sparkle-pink {
+  background-image:radial-gradient(circle, rgba(255,182,193,.9) 34%, transparent 70%);
+  background-repeat:repeat-x; 
+  background-size:9px 9px;
+  animation-delay: -4s, .15s, .45s;
+}
+
+.footer-wave .sparkle-yellow {
+  background-image:radial-gradient(circle, rgba(255,255,224,.85) 32%, transparent 68%);
+  background-repeat:repeat-x; 
+  background-size:8px 8px;
+  animation-delay: -7s, .55s, 1.1s;
+  opacity:.38;
+}
+
+.footer-wave .sparkle-blue {
+  background-image:radial-gradient(circle, rgba(173,216,230,.9) 33%, transparent 67%);
+  background-repeat:repeat-x; 
+  background-size:10px 10px;
+  animation-delay: -3s, .05s, .7s;
+}
+
+/* keyframes */
+@keyframes sparkle-drift {
+  from { background-position-x: 0 }
+  to   { background-position-x: -640px }
+}
+@keyframes sparkle-bob {
+  0%,100% { transform:translateY(0) }
+  50%     { transform:translateY(-3px) }
+}
+@keyframes sparkle-twinkle {
+  0%,100% { opacity:.25 }
+  50%     { opacity:.85 }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .footer-wave .sparkle-pink,
+  .footer-wave .sparkle-yellow,
+  .footer-wave .sparkle-blue {
+    animation:none; opacity:.3;
+  }
+}
+
+/* stickers */
+.sticker {
+  position: absolute;
+  width: 64px;
+  height: auto;
+  transition: transform 0.4s ease;
+  will-change: transform;
+  animation: floatY 3s ease-in-out infinite, rotateZ 5s ease-in-out infinite;
+  z-index: 20;
+  cursor: grab;
+}
+.sticker.spin { animation: spin 1s ease-in-out !important; }
+
+@keyframes floatY { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+@keyframes rotateZ { 0% { rotate: 0deg; } 100% { rotate: 2deg; } }
+@keyframes spin { 0% { rotate: 0deg; } 100% { rotate: 720deg; } }
+
+/* utilities */
+.hide-stickers .sticker { opacity: 0; }
+.hide-on-scroll.scrolled { transform: translateY(-100%); transition: transform 0.3s ease; }
+.fa-chevron-down { transition: transform .2s ease; }
+.rotate-180 { transform: rotate(180deg); }
+
+/* Tailwind CSS @layter and custom utilities */
+@layer base {
+  html, body { height: 100%; }
+  body { overflow-x: hidden; }                 /* stop sideways scroll */
+  img, video, svg { max-width: 100%; height: auto; }
+}
+
+@layer utilities {
+  /* 🍔 Guarantee a big enough touch target */
+  #menuToggle {
+    min-width: 44px;
+    min-height: 44px;
+  }
+  .touch-target {
+    min-width: 44px;
+    min-height: 44px;
+  }
+  /* Sticker toggle placement (raise it a bit + respect safe areas) */
+  .sticker-toggle,
+  #stickerToggle {
+    position: fixed;
+    right: max(1rem, env(safe-area-inset-right));
+    /* ↑ move higher by increasing bottom */
+    bottom: calc(2.25rem + env(safe-area-inset-bottom)); /* was near 1rem */
+    z-index: 60; /* above stickers */
+  }
+
+  @media (min-width: 768px) {
+    .sticker-toggle,
+    #stickerToggle {
+      bottom: 2.75rem; /* a touch higher on tablet/desktop too */
+    }
+  }
+  .debug-hitbox {
+    outline: 2px dashed hotpink !important;
+    outline-offset: 2px;
+  }
+  @keyframes wiggle {
+    0%, 100% { transform: rotate(0deg); }
+    25%      { transform: rotate(-2deg); }
+    75%      { transform: rotate(2deg); }
+  }
+  .wiggle {
+    animation: wiggle 0.4s ease-in-out;
+  }
+  figcaption {
+    font-size: 0.875rem;      /* text-sm */
+    text-align: center;       /* text-center */
+    margin-top: 0.5rem;       /* mt-2 */
+    color: #1f2937;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.375rem;  /* rounded-md */
+  }
+  /* layout guards */
+  .min-w-0 { 
+    min-width: 0;
+  }                                  
+  /* fix flex/grid children overflow */
+  .wrap-anywhere { 
+    overflow-wrap: anywhere;
+    word-break: break-word; 
+  }
+  .scroll-x { 
+    overflow-x: auto; 
+    -webkit-overflow-scrolling: touch; 
+  }
+
+  /* responsive 16:9 embed helper */
+  .embed { 
+    position: relative; width: 100%; aspect-ratio: 16 / 9; 
+  }
+  .embed > iframe { 
+    position: absolute; inset: 0; width: 100%; height: 100%; 
+  }
+}

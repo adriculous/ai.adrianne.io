@@ -1,23 +1,24 @@
-# Hugo build files
-public/
-resources/_gen/
-.hugo_build.lock
+# Hugo
+/public/
+/resources/_gen/
 
-# Node modules and build junk
+# Node
 node_modules/
-.parcel-cache/
-dist/
-.next/
-.vercel/
-.netlify/
-
-# OS & editor files
-.DS_Store
-Thumbs.db
-.idea/
-.vscode/
-*.log
-
-# npm & lockfiles
 package-lock.json
-yarn.lock
+
+# macOS system junk
+.DS_Store
+
+# VS Code settings (optional)
+.vscode/
+
+# Hugo cache
+hugo_stats.json
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# dotenv (if you use it)
+.env

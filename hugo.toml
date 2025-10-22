@@ -1,45 +1,91 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = "https://ai.adrianne.io/"
+languageCode = "en-us"
+title = "Prompted by Adrianne"
+pagination.pagerSize = 10
+timezone = "America/Los_Angeles"
+
+# Pastel mode if needed
+enableEmoji = true
+enableRobotsTXT = true
+
+[params]
+dateFormat = "01.02.2006" # or Change date format using "01/02/2006" as default date?
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
 
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+      
+  [markup.highlight]
+    noClasses = true
+    style = "github"
 
-[menu]
+[[menu.main]]
+  name = 'Home'
+  pageRef = '/'
+  weight = 1
 
-  [[menu.main]]
-    name = "Home"
-    url = "/"
-    weight = 1
+# Work → scrolls to homepage Featured
+[[menu.main]]
+  name = 'Work'
+  identifier = 'work'
+  url = '/#featured'
+  weight = 2
 
-  [[menu.main]]
-    name = "Prompt"
-    url = "/prompt/"
-    weight = 2
+# Children under Work
+[[menu.main]]
+  name = 'Prompt'
+  pageRef = 'prompt'
+  parent = 'work'
+  weight = 1
 
-  [[menu.main]]
-    name = "Design"
-    url = "/design/"
-    weight = 3
+[[menu.main]]
+  name = 'Projects'
+  pageRef = 'projects'
+  parent = 'work'
+  weight = 2
 
-  [[menu.main]]
-    name = "Playground"
-    url = "/playground/"
-    weight = 4
+[[menu.main]]
+  name = 'Playground'
+  pageRef = 'playground'
+  parent = 'work'
+  weight = 3
 
-  [[menu.main]]
-    name = "About"
-    url = "/about/"
-    weight = 5
+[[menu.main]]
+  name = 'Blog'
+  pageRef = 'blog'
+  weight = 3
 
-  [[menu.main]]
-    name = "Contact"
-    url = "/contact/"
-    weight = 6
+# Give About an identifier so we can add submenus later
+[[menu.main]]
+  name = 'About'
+  identifier = 'about'
+  pageRef = 'about'
+  weight = 4
 
-  [[menu.main]]
-    name = "Colophon"
-    url = "/colophon/"
-    weight = 7
+# About submenus
+[[menu.main]]
+  name = 'Ethical AI Manifesto'
+  pageRef = 'about/manifesto'
+  parent = 'about'
+  weight = 1
+
+[[menu.main]]
+  name = 'Credentials'
+  pageRef = 'about/credentials'
+  parent = 'about'
+  weight = 2
+
+[[menu.main]]
+  name = 'Contact'
+  pageRef = 'contact'
+  weight = 5
+
+[[menu.main]]
+  name = 'Colophon'
+  pageRef = 'colophon'
+  weight = 6

@@ -1,35 +1,13 @@
 ---
 title: "Prompt Playground"
-description: "Experiment, explore, and embrace chaos. Welcome to my prompt sandbox!"
-# image: "/images/design/playground-header.png"
-date: 2025-07-22
-layout: "single"
+emoji: "🧪"
+description: "Snippets, Tailwind tricks, layout doodles, and live experiments. This is where the chaos happens (on purpose). Stay tuned! 💻🎨"
+layout: "list"
+boxColor: "bg-[#eef4ff]" # pastel blue-violet
 ---
 
-# 🌸 **Welcome to the Prompt Playground!**  
-> This is where I test, tweak, and totally overthink my prompts (so you don’t have to 😅). Scroll through some experiments, prompt makeovers, and mini-games!
+Welcome to my digital sandbox — a cozy spot where I experiment with prompt engineering, creative coding, and AI-powered web magic.
 
----
+Each project here is an exploration: sometimes weird, sometimes helpful, always made with curiosity and sparkles. Whether it’s a layout test, a mini prompt app, or a shoujo manga generator, these playful builds help me sharpen my skills while having fun.
 
-## 🎯 Prompt of the Day
-
-<div class="bg-white p-4 rounded-xl shadow-sm font-mono text-[14px] text-gray-800 leading-relaxed whitespace-pre-wrap">
-👩🏻‍🍳 <strong>You are a cheerful baker.</strong><br>
-Your task: Explain neural networks using a cake analogy.<br>
-Style: Wholesome and cozy.<br>
-Output format: Bullet list.
-</div>
-
-## 💅 Prompt Makeover
-
-<div class="bg-stone-100 rounded-xl p-4 text-sm italic shadow-inner">
-  <p class="mb-1"><strong>Original Prompt:</strong></p>
-  <p>“Explain ChatGPT like I’m 5.”</p>
-</div>
-
-<div class="mt-4 bg-white rounded-xl p-5 shadow-lg border border-pink-200">
-  <p>🎀 <strong>You are a kindergarten teacher.</strong></p>
-  <p>Your task: Explain ChatGPT using crayons and toy metaphors.</p>
-  <p>Style: Gentle, playful, full of joy.</p>
-  <p>Output format: Short paragraph.</p>
-</div>
+This section will grow as I do — one prompt at a time. ✨
