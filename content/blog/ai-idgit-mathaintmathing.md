@@ -33,7 +33,7 @@ AI is meant to be a tool — an assistant to support human thinking, not replace
 
 Overreliance on AI leads to exactly this kind of embarrassing spectacle. Don’t be that person who posts on social media, celebrates an AI hallucination, and then gets ratio’d by the public for it. Working with AI responsibly means questioning, verifying, and understanding — not worshipping its output like gospel.
 
-> Remember: the math ain’t mathing if you stop thinking.
+> Remember: the math ain’t mathing if you stop thinking. 🌱
 
 ---
 
