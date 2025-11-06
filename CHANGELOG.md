@@ -8,6 +8,17 @@ Live Site: [Prompted by Adrianne](https://ai.adrianne.io)
 
 ---
 
+# 2025-11-05: [v1.5] 🔗 Unified Credentials Page
+
+### ✨ Updates
+- Removed the local `Credentials` page from *Prompted by Adrianne* (`ai.adrianne.io`)
+- Navigation link for `Credentials` now points to the master Credentials page at [Propmted by Adrianne](https://adrianne.io/credentials)
+- Updated navbar template to support `target="_blank"` so external links open in a new tab
+
+### 🧹 Cleanup
+- Deleted outdated `content/about/credentials.md` file
+- Confirmed working redirect behavior and cleaned up related configuration
+
 ## 2025-10-21: [v1.4] AI Idgit Chronicles I: The Math Ain't Mathing
 - Added new blog post: **AI Idgit Chronicles I: The Math Ain't Mathing (OpenAI's Embarrassing Equation)**
 - **AI Idgit Chronicles** series launched to highlight AI mishaps caused by human error, overconfidence, and lack of criticical thinking. I see a lot of anti-AI haters throwing shade at AI when in reality, many AI failures are due to people misusing or misunderstanding the technology

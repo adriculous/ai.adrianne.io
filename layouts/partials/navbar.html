@@ -16,14 +16,14 @@
     <ul class="flex gap-4 items-center">
       {{ range .Site.Menus.main }}
         <li class="relative group">
-          <a href="{{ .URL }}" class="inline-flex items-center hover:underline underline-offset-4 decoration-pink-400 decoration-wavy transition">
+          <a href="{{ .URL }}"{{ with .Params.target }} target="{{ . }}"{{ end }}{{ if eq .Params.target "_blank" }} rel="noopener"{{ end }} class="inline-flex items-center hover:underline underline-offset-4 decoration-pink-400 decoration-wavy transition">
             {{ .Name }}
           </a>
           {{ if .HasChildren }}
             <ul class="absolute left-0 top-full opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-150 rounded-2xl shadow-lg bg-white/90 backdrop-blur p-2 z-50 min-w-[12rem]">
               {{ range .Children }}
                 <li>
-                  <a href="{{ .URL }}" class="block px-3 py-2 rounded-lg hover:bg-pink-50">
+                  <a href="{{ .URL }}"{{ with .Params.target }} target="{{ . }}"{{ end }}{{ if eq .Params.target "_blank" }} rel="noopener"{{ end }} class="block px-3 py-2 rounded-lg hover:bg-pink-50">
                     {{ .Name }}
                   </a>
                 </li>
@@ -45,7 +45,7 @@
           {{ if $item.HasChildren }}
   <div class="flex items-center justify-between">
     <!-- Parent link stays clickable -->
-    <a href="{{ $item.URL }}" class="py-2 font-medium hover:underline underline-offset-4 decoration-wavy decoration-pink-400">
+    <a href="{{ $item.URL }}"{{ with $item.Params.target }} target="{{ . }}"{{ end }}{{ if eq $item.Params.target "_blank" }} rel="noopener"{{ end }} class="py-2 font-medium hover:underline underline-offset-4 decoration-wavy decoration-pink-400">
       {{ $item.Name }}
     </a>
 
@@ -61,14 +61,14 @@
   <ul id="submenu-{{ $item.Identifier | default (printf "m%d" $i) }}" class="mt-1 pl-4 space-y-1 hidden">
     {{ range $item.Children }}
       <li>
-        <a href="{{ .URL }}" class="block py-1 hover:underline underline-offset-4 decoration-wavy decoration-pink-400">
+        <a href="{{ .URL }}"{{ with .Params.target }} target="{{ . }}"{{ end }}{{ if eq .Params.target "_blank" }} rel="noopener"{{ end }} class="block py-1 hover:underline underline-offset-4 decoration-wavy decoration-pink-400">
           {{ .Name }}
         </a>
       </li>
     {{ end }}
   </ul>
 {{ else }}
-  <a href="{{ $item.URL }}" class="block py-2 hover:underline underline-offset-4 decoration-wavy decoration-pink-400">
+  <a href="{{ $item.URL }}"{{ with $item.Params.target }} target="{{ . }}"{{ end }}{{ if eq $item.Params.target "_blank" }} rel="noopener"{{ end }} class="block py-2 hover:underline underline-offset-4 decoration-wavy decoration-pink-400">
     {{ $item.Name }}
   </a>
 {{ end }}
