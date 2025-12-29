@@ -8,7 +8,20 @@ Live Site: [Prompted by Adrianne](https://ai.adrianne.io)
 
 ---
 
-# 2025-11-05: [v1.5] 🔗 Unified Credentials Page
+## 2025-12-28: [v.16] 🎓📒🤦🏻‍♀️ AI Slop-based fake journals exist!
+
+### 📝 Added
+- Published new blog post: **AI Idgit Chronicles II: Fake Journals & AI Delulu**
+  - Discusses the rise of fake academic journals generated with AI
+  - Explores the ethical implications of misusing AI in scholarly work
+  - Highlights the importance of critical thinking and verification when using AI tools
+
+### ❌ Removed
+- Deleted unused image assets no longer referenced by the site
+
+---
+
+## 2025-11-05: [v1.5] 🔗 Unified Credentials Page
 
 ### ✨ Updates
 - Removed the local `Credentials` page from *Prompted by Adrianne* (`ai.adrianne.io`)
