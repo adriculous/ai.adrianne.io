@@ -25,7 +25,7 @@ Live Site: [Prompted by Adrianne](https://ai.adrianne.io)
 
 ### ✨ Updates
 - Removed the local `Credentials` page from *Prompted by Adrianne* (`ai.adrianne.io`)
-- Navigation link for `Credentials` now points to the master Credentials page at [Propmted by Adrianne](https://adrianne.io/credentials)
+- Navigation link for `Credentials` now points to the master Credentials page at [Prompted by Adrianne](https://adrianne.io/credentials)
 - Updated navbar template to support `target="_blank"` so external links open in a new tab
 
 ### 🧹 Cleanup
