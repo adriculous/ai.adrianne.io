@@ -10,6 +10,11 @@ boxColor: "bg-[#fffbe7]" # lemon souffle
 
 This site was handcrafted with love, curiosity, and a bit of monospace magic.
 
+✨ Looking for the full breakdown across all my sites?  
+👉 Check out the **[Master Colophon on Portal by Adrianne →](https://adrianne.io/colophon)**
+
+---
+
 - **FRAMEWORK:** [Hugo](https://gohugo.io/) — static site generator for the nerdy but impatient
 - **STYLING:** [Tailwind CSS](https://tailwindcss.com/) — because utility classes are love, utility classes are life
 - **FONT:** [Victor Mono](https://rubjo.github.io/victor-mono/) — for that sweet cursive-italic code aesthetic. I'm using the [Google Fonts](https://fonts.google.com/specimen/Victor+Mono) version

@@ -3,6 +3,7 @@ title: "GPT-1NF1N1TULTR4M4X™"
 layout: "single"
 description: "The future of AI, if the future was powered by vibes, caffeine, and mild regret."
 emoji: "🤖"
+tags: ["parody", "fake ai", "playground", "satire", "delulu meter", "ai humor"]
 date: 2025-08-24
 boxColor: "bg-[#f3f0ff]" # pastel lilac
 ---

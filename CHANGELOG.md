@@ -8,7 +8,37 @@ Live Site: [Prompted by Adrianne](https://ai.adrianne.io)
 
 ---
 
-## 2025-12-28: [v.16] 🎓📒🤦🏻‍♀️ AI Slop-based fake journals exist!
+## 2026-04-24 [v1.7] 🏷️ Tags and 🧹Cleanups
+
+### Added
+- Tags system using reusable `tags.html` partial
+- Tags displayed on:
+  - Blog posts
+  - Prompt Case Reports
+  - Projects
+  - Playground posts
+- New `playground/single.html` layout
+
+### Changed
+- Standardized post layout structure across all content types:
+  - Content → Tags → Navigation
+- Updated navigation buttons:
+  - Blog → Back to Blog
+  - Prompts → Back to Prompts
+  - Projects → Back to Projects
+  - Playground → Back to Playground
+- Improved Colophon page:
+  - Added link to Master Colophon (`adrianne.io`)
+  - Adjusted spacing and layout for clarity
+
+### Fixed
+- Tags not rendering due to missing layout logic
+- Inconsistent tag placement across templates
+- Navigation buttons linking to incorrect pages (e.g. Home instead of section pages)
+
+---
+
+## 2025-12-28: [v1.6] 🎓📒🤦🏻‍♀️ AI Slop-based fake journals exist!
 
 ### 📝 Added
 - Published new blog post: **AI Idgit Chronicles II: Fake Journals & AI Delulu**
