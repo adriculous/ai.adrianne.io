@@ -8,6 +8,18 @@ Live Site: [Prompted by Adrianne](https://ai.adrianne.io)
 
 ---
 
+## 2026-06-05 [v1.8] 💻 WordPress Headless CMS → Hugo Sync Workflow
+
+### Added
+
+- Added `static/sync-prompted.mjs` to synchronize content from a headless WordPress CMS into Hugo-compatible Markdown files.
+- Added support for Prompt Cases, Projects, Playground entries, and Blog posts.
+- Automatically generates Hugo frontmatter, tags, featured images, excerpts, and metadata from WordPress content.
+- Established the content publishing workflow for Prompted by Adrianne.
+- Laid the groundwork for future integration with additional sites in the Adrianne portfolio ecosystem.
+
+---
+
 ## 2026-04-24 [v1.7] 🏷️ Tags and 🧹Cleanups
 
 ### Added

@@ -40,7 +40,9 @@ img, video, svg { max-width: 100%; height: auto; display: block; }
 .prose { color: #1f2937; }
 .prose a { color: #0ea5e9; text-decoration: underline; text-underline-offset: 2px; }
 .prose a:hover { color: #0284c7; }
-.prose h1 { color: #1f2937; }
+.prose h1 {
+  color: #6366f1;
+}
 .prose h2 { color: #f472b6; }
 .prose h3 { color: #60a5fa; }
 .prose h4 { color: #a78bfa; }
